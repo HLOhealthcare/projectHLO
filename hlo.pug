@@ -1,0 +1,128 @@
+doctype html
+html(lang='en')
+    head
+        //meta(http-equiv="Content-Security-Policy", content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; connect-src 'self'; child-src 'none'; img-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; object-src 'none'")
+        meta(http-equiv="content-type", content="text/html; charset=utf-8")
+        meta(http-equiv="X-UA-Compatable" content="IE=edge")
+        meta(name="viewport", content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        meta(name="description", content="Description goes here")
+        meta(name="keywords", content="healthcare library, healthcarelibrary, healthcarelib, healthcarelib.org, HLO")
+
+        title HLO • Home
+        
+        // facebook og
+        meta(property="og:title", content="Healthcare Library")
+        meta(property="og:site_name", content="healthcarelib.org")
+        meta(property="og:title", content="http://healthcarelib.org")
+        meta(property="og:image", content="")
+        meta(property="og:description", content="description")
+        
+        // twitter og
+        meta(property="twitter:site", content="healthcarelib.org")
+        meta(property="twitter:card" content="description")
+        meta(property="twitter:title" content="Healthcare Library")
+
+
+        // main stylesheets
+        link(rel="stylesheet", type="text/css", href="./css/hlo.css")   
+
+        // font-awesome
+        link(rel="stylesheet", type="text/css" href="../healthcarelib/libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
+
+        // animate.css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw", crossorigin="anonymous")
+
+        // Add icon files 
+
+
+
+        // scripts
+        // AWS path
+        //script(src="./libraries/jQuery/default/main.js")
+        //script(src="./libraries/jQuery/master/ajax.js")
+        //script(src="./libraries/jQuery/master/migrate.js")
+   
+        // LOCAL path
+        // jquery.js
+        script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
+        // ajax.js
+        script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
+        // migrate.js
+        script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
+            //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+            //
+            // Image Gallery
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
+
+
+body
+
+
+    header
+        nav.navbar
+            div 
+                a(href="#") logo
+            div 
+                a(href="#") HLO
+            div 
+                //empty space
+            div 
+                a(href="#") Tagalog
+            div 
+                a(href="#") Blog
+            div 
+                a(href="#") FAQS
+            div 
+                a(href="#" class="rocket") RocketChat
+            //div 
+                a(href="#") 
+
+        #title-box
+            p 
+                | An 
+                span open and transparent 
+                | not for profit care organization 
+            p Hello friends, welcome to HLO! It stands for Health library and Care organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought Uhealth and Ucare programs.
+        #white-sheet
+            #inner-container
+                #text-container
+                    p 
+                    p What makes us unique
+                #icon-container
+                    aside#icon-container-one
+                        a(href="#" alt="mission")
+                        #first-icon.main-icons
+                        p Programs
+                    aside#icon-container-two
+                        a(href="#" alt="value")
+                        #second-icon.main-icons
+                        p Philosophy
+                    aside#icon-container-three
+                        a(href="#" alt="vision")
+                        #third-icon.main-icons
+                        p Principles
+
+        // END HEADER 
+
+
+        // START MAIN 
+
+    main.main-container
+        article#at 
+            section#at2
+                p Programs
+
+
+
+
+
+
+                
+
+
+
+
+
+
+    script(src="./js/hlo.js")

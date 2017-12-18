@@ -1,0 +1,280 @@
+
+
+
+// import fonts
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans|Permanent+Marker|Oswald');
+
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Permanent Marker', cursive;
+//font-family: 'Dancing Script', cursive;
+//font-family: 'Lato', sans-serif;
+//font-family: 'Oswald',sans-serif;
+
+
+// Variables
+
+// Colors
+$green: #5ABC6E;
+$light-green: #38C098;
+$pro-font: #3E444A;
+$dark-font: #4A4A4A;
+$light-bg-color: #FAFAFA;
+$cyan: cyan;
+$manilla: #FFFFAA;
+$marker-color: #130D6B;
+$primary-light-blue: #8DB9ED;
+$primary-line-color: #CCC;
+
+// Fonts
+$apple-font: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+$open-sans: 'Open sans', sans-serif;
+$neue: 'Helvetica Neue', Arial, sans-serif;
+$bree: 'Bree Serif', Courier;
+$marker: 'Permanent Marker', cursive;
+$lato: 'Lato',sans-serif;
+$dancing: 'Dancing Script', cursive;
+$oswald: 'Oswald',sans-serif;
+
+
+// Social variables
+$wordpress-color: #21759B;
+$twitter-color: #00aced;
+$facebook-color: #3b5998;
+
+
+
+// Mixins
+
+// Media Query for Responsive Display
+@mixin media($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+// links
+@mixin href($color) {
+    text-decoration: none;
+    color: $color; }
+
+// background images
+@mixin image($path, $size) {
+    background: {
+        image: (url($path));
+        size: $size;
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+}
+
+// font settings
+@mixin font-settings($family,$size,$color,$weight) {
+    color: $color;
+    font: {
+        family: $family;
+        size: $size;
+        weight: $weight;
+    }
+}
+
+
+
+// START BODY
+
+
+*, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+header {
+    background: linear-gradient( rgba(56,192,152,1), rgba(56,192,152,0.5)), url('../../../Desktop/seasia.png');
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    padding-bottom: 75px;
+
+    animation: animatedBackground 30s linear infinite;
+    @keyframes animatedBackground {
+        0%, 100% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+    } //END keyframes
+
+    nav.navbar {
+        height: 65px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        
+        > div {
+            height: 55px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 60px;
+            &:nth-child(3) {
+                flex-grow: 1;
+            }
+
+            > a {
+                padding: 0 25px;
+                @include font-settings($apple-font,1em,#FFF,200);
+                @include href(#FFF);
+                display: inline-block;
+            }
+            .rocket {
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 100%;
+                    height: 2px;
+                    margin-bottom: 55px;
+                    background-color: blue;
+                    border-radius: 45px;
+                }
+            }
+
+        }
+    }//END navbar
+
+    #title-box {
+        width: 700px;
+        margin: 30px auto 0 auto;
+        padding: 50px 0;
+        text-align: center;
+
+        p {
+             //family, size, color, weight
+            @include font-settings($open-sans,1.5em,#FFF,200);           
+        }
+
+        p:nth-child(1) {
+            margin: 15px 0;
+
+            span {
+                font-size: 1.2em;
+                font-weight: 400;
+                color: #333;
+            }
+        }
+        p:nth-child(2) {
+            @include font-settings($open-sans,1em,#333,200);
+        }
+
+    }//END title-box
+    #white-sheet {
+        position: relative;
+        width: 700px;
+        margin: 40px auto;
+        border-radius: 10px;
+        color: #333;
+        border: 5px solid #FFF;
+
+        #inner-container {
+            text-align: center;
+            padding: 20px 0 30px 0;
+            #text-container {
+                margin: 10px 0 30px 0;       
+
+                p {
+                    @include font-settings($neue,1.3em,#333,300);
+                }
+            }
+            #icon-container {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                perspective: 1000px;
+
+                    #icon-container-one {
+                        transform: rotateY(40deg);
+                    }
+                    #icon-container-two {
+                        transform: rotateY(0deg);
+                    }
+                    #icon-container-three {
+                        transform: rotateY(320deg);
+                    }
+
+                
+                > aside {
+                    position:relative;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #FFF;
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 4px #99B7DB;
+                    @include font-settings($neue,1.1em,#333,300);
+                    &:hover {
+                        transform: rotate(0);
+                    }
+
+                    &:nth-child(odd) {
+                        border: 10px solid #FFF;
+                    }
+
+                    a {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    
+                    .main-icons {
+                        height: 150px;
+                        width: 150px;
+                    }
+
+                    #first-icon {
+                        @include image('../../healthcarelib/images/hlo-icons/mission-2.png',contain);
+                    }
+
+                    #second-icon {
+                        @include image('../../healthcarelib/images/hlo-icons/values-2.png',contain);                   
+                    }
+
+                    #third-icon {
+                        @include image('../../healthcarelib/images/hlo-icons/vision-2.png',contain);
+                    }
+
+                    p {
+                        border-top: 1px solid $light-green;
+                        text-align: center;
+                        padding: 20px;
+
+                    }
+                }
+            }
+        }//END inner-container
+    }//END white-sheet
+} //END heder
+
+
+// START MAIN
+
+main.main-container {
+    height: 600px;
+    width: 100%;
+
+    
+
+}//END main-container
+
+
+
+
+
+
+

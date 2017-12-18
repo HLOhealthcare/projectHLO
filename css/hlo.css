@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans|Permanent+Marker|Oswald");
+*, body {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+header {
+  background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../../../Desktop/seasia.png");
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  padding-bottom: 75px;
+  animation: animatedBackground 30s linear infinite; }
+@keyframes animatedBackground {
+  0%, 100% {
+    background-position: 0 0; }
+  50% {
+    background-position: 100% 100%; } }
+  header nav.navbar {
+    height: 65px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex; }
+    header nav.navbar > div {
+      height: 55px;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 60px; }
+      header nav.navbar > div:nth-child(3) {
+        flex-grow: 1; }
+      header nav.navbar > div > a {
+        padding: 0 25px;
+        color: #FFF;
+        font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+        font-size: 1em;
+        font-weight: 200;
+        text-decoration: none;
+        color: #FFF;
+        display: inline-block; }
+      header nav.navbar > div .rocket::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 55px;
+        background-color: blue;
+        border-radius: 45px; }
+  header #title-box {
+    width: 700px;
+    margin: 30px auto 0 auto;
+    padding: 50px 0;
+    text-align: center; }
+    header #title-box p {
+      color: #FFF;
+      font-family: "Open sans", sans-serif;
+      font-size: 1.5em;
+      font-weight: 200; }
+    header #title-box p:nth-child(1) {
+      margin: 15px 0; }
+      header #title-box p:nth-child(1) span {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #333; }
+    header #title-box p:nth-child(2) {
+      color: #333;
+      font-family: "Open sans", sans-serif;
+      font-size: 1em;
+      font-weight: 200; }
+  header #white-sheet {
+    position: relative;
+    width: 700px;
+    margin: 40px auto;
+    border-radius: 10px;
+    color: #333;
+    border: 5px solid #FFF; }
+    header #white-sheet #inner-container {
+      text-align: center;
+      padding: 20px 0 30px 0; }
+      header #white-sheet #inner-container #text-container {
+        margin: 10px 0 30px 0; }
+        header #white-sheet #inner-container #text-container p {
+          color: #333;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-size: 1.3em;
+          font-weight: 300; }
+      header #white-sheet #inner-container #icon-container {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        perspective: 1000px; }
+        header #white-sheet #inner-container #icon-container #icon-container-one {
+          transform: rotateY(40deg); }
+        header #white-sheet #inner-container #icon-container #icon-container-two {
+          transform: rotateY(0deg); }
+        header #white-sheet #inner-container #icon-container #icon-container-three {
+          transform: rotateY(320deg); }
+        header #white-sheet #inner-container #icon-container > aside {
+          position: relative;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+          background-color: #FFF;
+          border-radius: 4px;
+          box-shadow: 2px 2px 4px #99B7DB;
+          color: #333;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-size: 1.1em;
+          font-weight: 300; }
+          header #white-sheet #inner-container #icon-container > aside:hover {
+            transform: rotate(0); }
+          header #white-sheet #inner-container #icon-container > aside:nth-child(odd) {
+            border: 10px solid #FFF; }
+          header #white-sheet #inner-container #icon-container > aside a {
+            position: absolute;
+            height: 100%;
+            width: 100%; }
+          header #white-sheet #inner-container #icon-container > aside .main-icons {
+            height: 150px;
+            width: 150px; }
+          header #white-sheet #inner-container #icon-container > aside #first-icon {
+            background-image: url("../../healthcarelib/images/hlo-icons/mission-2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; }
+          header #white-sheet #inner-container #icon-container > aside #second-icon {
+            background-image: url("../../healthcarelib/images/hlo-icons/values-2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; }
+          header #white-sheet #inner-container #icon-container > aside #third-icon {
+            background-image: url("../../healthcarelib/images/hlo-icons/vision-2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; }
+          header #white-sheet #inner-container #icon-container > aside p {
+            border-top: 1px solid #38C098;
+            text-align: center;
+            padding: 20px; }
+
+main.main-container {
+  height: 600px;
+  width: 100%; }
+
+/*# sourceMappingURL=hlo.css.map */
