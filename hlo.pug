@@ -60,9 +60,13 @@ body
 
 
     header
+
+        .canvas
+        .searchlight
+
         nav.navbar
             div 
-                a(href="#") logo
+                a(href="#") 
             div 
                 a(href="#") HLO
             div 
@@ -83,7 +87,7 @@ body
                 | An 
                 span open and transparent 
                 | not for profit care organization 
-            p Hello friends, welcome to HLO! It stands for Health library and Care organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought Uhealth and Ucare programs.
+            p Hello friends, welcome to HLO! It stands for Health library and Care organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought "Uhealth" and "Ucare" programs.
         #white-sheet
             #inner-container
                 #text-container
@@ -106,12 +110,102 @@ body
         // END HEADER 
 
 
-        // START MAIN 
-
+    // START MAIN 
     main.main-container
-        article#at 
+        // Programs
+        article#programs-sec 
+            .main-title-box
+                p.main-title-text What is HLO?
+            section#at1
+                aside#au1
+                    #uhealth-icon.icon-hero
+                    p.title "Uhealth" Library
+                    p.intro 
+                        span Uhealth 
+                        | is your Health wants and needs program!
+                    p.para Our services program offers a subsidized healthcare cost for general full laboratory services and radiology imaging procedures. We encourage our partners and individuals whose wants or needs are in health and care at a lower market price and even if your insurance has you covered with your expenses, you can still avail a discounted amount from your co-pay. 
+                        span We make sure you get more by paying less. 
+                        | Great value for you and for the hard earned money that you and your family deserve. 
+
+            .container-separator
+                .section-separator
+
             section#at2
-                p Programs
+                aside#bu1
+                    #ucare-icon.icon-hero
+                    p.title "Ucare" Organization
+                    p.intro 
+                        span Ucare 
+                        | is your causes and initiatives program!
+
+                aside#bu2
+                    p.para Our Ucare program supports community disaster efforts and shares information on events or efforts for the community to get involved in. 
+                aside.empty
+                aside#bu3
+                    #test.gallery-grid(href="javascript:;")
+
+
+
+        // Philosophy
+        article#y-sec
+            .main-title-box
+                p.main-title-text Why HLO?
+            section#y-icons-container
+                aside#first
+                    #y-icon-one
+                    p The green cherry from mars left the side before alice covered the sky from the new rock that was enlarged by the developing powers of the underworld.
+                aside#second
+                    #y-icon-two
+                    p The green cherry from mars left the side before alice covered the sky from the new rock that was enlarged by the developing powers of the underworld.
+                aside#third
+                    #y-icon-three
+                    p The green cherry from mars left the side before alice covered the sky from the new rock that was enlarged by the developing powers of the underworld.
+                   
+
+
+        article#team
+            .main-title-box 
+                .main-title-text 
+                    | The Team
+
+
+            #team-container
+                .ind-container
+                    #emp-one.mug
+                    .emp-info
+                        p Rabboni 
+                            span Calunsag
+
+                        p Project Lead
+                    .social-container
+                        a.twitter(href="#", rel="Twitter")
+                            i.fa.fa-twitter(aria-hidden="true")
+                        a.wordpress(href="#", rel="Wordpress")
+                            i.fa.fa-wordpress(aria-hidden="true")                   
+
+                .ind-container
+                    #emp-two.mug
+                    .emp-info
+                        p Ted  
+                            span Diepenbrock
+
+                        p Tech Lead
+                    .social-container
+                        a.twitter(href="#", rel="Twitter")
+                            i.fa.fa-twitter(aria-hidden="true")
+                        a.github(href="#", rel="Github")
+                            i.fa.fa-github(aria-hidden="true")
+
+
+
+
+
+
+
+
+
+
+
 
 
 

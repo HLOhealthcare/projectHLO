@@ -2,7 +2,7 @@
 
 
 // import fonts
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans|Permanent+Marker|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans|Source+Sans+Pro:200,300,400,600|Permanent+Marker|Oswald');
 
 //font-family: 'Open Sans', sans-serif;
 //font-family: 'Permanent Marker', cursive;
@@ -17,19 +17,20 @@
 $green: #5ABC6E;
 $light-green: #38C098;
 $pro-font: #3E444A;
+$hero-color: #3E3A67;
+$light-blue: #F4F7FF;
 $dark-font: #4A4A4A;
 $light-bg-color: #FAFAFA;
 $cyan: cyan;
 $manilla: #FFFFAA;
 $marker-color: #130D6B;
-$primary-light-blue: #8DB9ED;
-$primary-line-color: #CCC;
 
 // Fonts
 $apple-font: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
 $open-sans: 'Open sans', sans-serif;
+$sans-pro: 'Source Sans Pro', sans-serif;
 $neue: 'Helvetica Neue', Arial, sans-serif;
-$bree: 'Bree Serif', Courier;
+$bree: 'Bree Serif', Courier, sans-serif;
 $marker: 'Permanent Marker', cursive;
 $lato: 'Lato',sans-serif;
 $dancing: 'Dancing Script', cursive;
@@ -40,6 +41,7 @@ $oswald: 'Oswald',sans-serif;
 $wordpress-color: #21759B;
 $twitter-color: #00aced;
 $facebook-color: #3b5998;
+$github-color: #000;
 
 
 
@@ -81,7 +83,6 @@ $facebook-color: #3b5998;
 
 // START BODY
 
-
 *, body {
     padding: 0;
     margin: 0;
@@ -94,15 +95,49 @@ header {
     background-position: 0px 0px;
     padding-bottom: 75px;
 
-    animation: animatedBackground 30s linear infinite;
-    @keyframes animatedBackground {
-        0%, 100% {
-            background-position: 0 0;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
-    } //END keyframes
+    //animation: animatedBackground 30s linear infinite;
+    //@keyframes animatedBackground {
+    //    0%, 100% {
+    //        background-position: 0 0;
+    //    }
+    //    50% {
+    //        background-position: 100% 100%;
+    //    }
+    //} //END keyframes
+
+
+    // START spotlight
+
+    //.searchlight {
+    //    position: absolute;
+    //    z-index: 100;
+    //    height: 300px;
+    //    width: 300px;
+    //    border-width: 100vh 100vw;
+    //    border-style: solid;
+    //    border-color: #000;
+    //    top: -100vh;
+    //    left: -100vw;
+    //    cursor: none;
+    //    background: #000;
+    //    -moz-box-sizing: content-box;
+    //    -webkit-box-sizing: content-box;
+    //    -ms-box-sizing: content-box;
+    //    box-sizing: content-box;
+    //    opacity: 0.3;
+    //}
+    //.searchlight.on {
+    //    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    //    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    //    background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+    //    background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* IE10+ */
+    //    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* W3C */
+    //}
+
+
+
+
+    // START .navbar
 
     nav.navbar {
         height: 65px;
@@ -116,8 +151,32 @@ header {
             margin-top: 10px;
             text-align: center;
             line-height: 60px;
+            &:nth-child(1) {
+                margin-left: 15px;
+                @include image('../../healthcarelib/images/angel-logo.png',contain);
+            }
             &:nth-child(3) {
                 flex-grow: 1;
+            }
+            &:nth-child(4) {
+                @include media(45em) {
+                    display: none;
+                }
+            }
+            &:nth-child(5) {
+                @include media(40em) {
+                    display: none;
+                }
+            }
+            &:nth-child(6) {
+                @include media(40em) {
+                    display: none;
+                }
+            }
+            &:nth-child(7) {
+                @include media(40em) {
+                    display: none;
+                }
             }
 
             > a {
@@ -146,7 +205,9 @@ header {
         margin: 30px auto 0 auto;
         padding: 50px 0;
         text-align: center;
-
+        @include media(48em) {
+            width: 90%;
+        }
         p {
              //family, size, color, weight
             @include font-settings($open-sans,1.5em,#FFF,200);           
@@ -173,7 +234,11 @@ header {
         border-radius: 10px;
         color: #333;
         border: 5px solid #FFF;
-
+        @include media(48em) {
+            margin: 15px auto;
+            width: 75%;
+            background-color: #FFF;
+        }
         #inner-container {
             text-align: center;
             padding: 20px 0 30px 0;
@@ -193,17 +258,30 @@ header {
                 align-items: center;
                 flex-direction: row;
                 perspective: 1000px;
-
-                    #icon-container-one {
-                        transform: rotateY(40deg);
+                @include media(48em) {
+                    perspective: 1;
+                }
+                @include media(32em) {
+                    flex-direction: column;
+                }
+                #icon-container-one {
+                    transform: rotateY(40deg);
+                    @include media(48em) {
+                        transform: rotateY(0);
                     }
-                    #icon-container-two {
-                        transform: rotateY(0deg);
+                }
+                #icon-container-two {
+                    transform: rotateY(0deg);
+                    @include media(48em) {
+                        transform: rotateY(0);
                     }
-                    #icon-container-three {
-                        transform: rotateY(320deg);
+                }
+                #icon-container-three {
+                    transform: rotateY(320deg);
+                    @include media(48em) {
+                        transform: rotateY(0);
                     }
-
+                }
                 
                 > aside {
                     position:relative;
@@ -217,13 +295,15 @@ header {
                     background-color: #FFF;
                     border-radius: 4px;
                     box-shadow: 2px 2px 4px #99B7DB;
-                    @include font-settings($neue,1.1em,#333,300);
-                    &:hover {
-                        transform: rotate(0);
+                    @include font-settings($neue,1.1em,#333,300);                   @include media(48em) {
+                        background-color: none;
+                        box-shadow: none;
                     }
-
                     &:nth-child(odd) {
                         border: 10px solid #FFF;
+                        @include media(48em) {
+                            border: none;   
+                        }
                     }
 
                     a {
@@ -235,6 +315,10 @@ header {
                     .main-icons {
                         height: 150px;
                         width: 150px;
+                        @include media(48em) {
+                            height: 100px;
+                            width: 100px;
+                        }
                     }
 
                     #first-icon {
@@ -265,16 +349,452 @@ header {
 // START MAIN
 
 main.main-container {
-    height: 600px;
     width: 100%;
-
     
+    #programs-sec {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        
+        .main-title-box {
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px 0;
+            text-align: center;
+            @include font-settings($sans-pro,1.8em,#333,400);
+        }
+        .container-separator {
+            width: 100%;
+            text-align: center;
+            padding: 45px 0;
+            //.section-separator {
+            //    background: #202736;
+            //    display: inline-block;
+            //    margin: 0px auto;
+            //    position: relative;
+            //    height: 2px;
+            //    width: 40px;
+            //}
+            //.section-separator::before {
+            //    background: $light-green;
+            //    content: "";
+            //    position: absolute;
+            //    height: 2px;
+            //    left: calc(100% + 2px);
+            //    top: 0px;
+            //    width: 40px;
+            //}
+            //.section-separator::after {
+            //    background: $light-green;
+            //    content: "";
+            //    position: absolute;
+            //    height: 2px;
+            //    right: calc(100% + 2px);
+            //    top: 0px;
+            //    width: 40px;
+            //}
+        }//END container-separator
+        #at1 {
+            #au1 {
+
+                #uhealth-icon {
+                    position: relative;
+                    height: 60px;
+                    width: 60px;
+                    
+                    @include image('../../healthcarelib/images/hlo-icons/values-2.png',contain);
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 30px;
+                        left: 70px;
+                        display: inline-block;
+                        height: 2px;
+                        width: 300px;
+                        margin: 0 auto;
+                        background-color: #777;
+                        @include media(48em) {
+                            width: 230px;
+                        }
+                        @include media(40em) {
+                            width: 200px;
+                        }
+                        @include media(35em) {
+                            width: 130px;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 30px;
+                        right: 70px;
+                        display: inline-block;
+                        height: 2px;
+                        width: 300px;
+                        margin: 0 auto;
+                        background-color: #777;
+                        @include media(48em) {
+                            width: 230px;
+                        }
+                        @include media(40em) {
+                            width: 200px;
+                        }
+                        @include media(35em) {
+                            width: 130px;
+                        }
+                    }
+                }
+                p.para {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }//END #au1
+        }//END #at1
+
+        #at2 {
+            padding-bottom: 50px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            @include media(48em) {
+                flex-direction: column;
+                flex-wrap: no-wrap;
+            }
+            #bu1 {
+                width: 100%;
+                #ucare-icon {
+                    position: relative;
+                    height: 60px;
+                    width: 60px;
+                    @include image('../../healthcarelib/images/hlo-icons/services-2.png',contain);
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 30px;
+                        left: 70px;
+                        display: inline-block;
+                        height: 2px;
+                        width: 300px;
+                        margin: 0 auto;
+                        background-color: #777;
+                        @include media(48em) {
+                            width: 230px;
+                        }
+                        @include media(40em) {
+                            width: 200px;
+                        }
+                        @include media(35em) {
+                            width: 130px;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 30px;
+                        right: 70px;
+                        display: inline-block;
+                        height: 2px;
+                        width: 300px;
+                        margin: 0 auto;
+                        background-color: #777;
+                        @include media(48em) {
+                            width: 230px;
+                        }
+                        @include media(40em) {
+                            width: 200px;
+                        }
+                        @include media(35em) {
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+
+            #bu2 {
+                width: 48%;
+                padding-top: 50px;
+                p.para {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                @include media(55em) {
+                
+                }
+                @include media(48em) {
+                    width: 100%;
+                }
+            }
+            .empty {
+                flex-grow: 1;
+                @include media(60em) {
+                    display: none;
+                }
+            }
+            #bu3 {
+                width: 48%;
+                padding-top: 50px;
+                @include media(48em) {
+                    width: 100%;
+                }
+                .gallery-grid {
+                    height: 300px;
+                    width: 500px;
+                    @include image('../../healthcarelib/images/gallery-grid.png',contain);
+                    @include media(55em) {
+                        height: auto;
+                        height: 250px;
+                        width: 400px;
+                    }
+                    @include media(48em) {
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }               
+            }
+        }//END at2
+
+        // default elements
+        section {
+            text-align: center;
+            justify-content: space-between;
+            aside {
+                margin: 0 auto;
+                .title {
+                    letter-spacing: .05em;
+                    @include font-settings($neue,2.5em,#303030,200);
+                    @include media(48em) {
+                        font-size: 2.0em;
+                    }
+                    @include media(40em) {
+                        font-size: 1.6em;
+                    }
+                }
+                
+                .intro {
+                    @include font-settings($neue,1.8em,#303030,200);     
+                    @include media(48em) {
+                        font-size: 1.5em;
+                    }
+                    @include media(40em) {
+                        font-size: 1.3em;
+                    }
+                }
+                .para {
+                    @include font-settings($neue,1.2em,#303030,200);
+                    @include media(48em) {
+                        font-size: 1.1em;
+                    }
+                    @include media(40em) {
+                        font-size: 1em;
+                    }
+                }
+                .icon-hero {
+                    margin: 0 auto;
+                }
+                p {
+                    padding: 10px 0;
+                    line-height: 1.5; 
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }//END #programs-sec
+    
+    #y-sec {
+        height: auto;
+        width: 100%;
+        background-color: $light-blue;
+
+        .main-title-box {
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px 0;
+            text-align: center;
+            @include font-settings($sans-pro,1.8em,#333,400);
+        }
+
+        #y-icons-container {
+            height: 100%;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0 75px 0;
+            @include media(48em) {
+                width: 75%;
+                margin: 0 auto;
+                flex-direction: column;
+            }
+            @include media(40em) {
+                width: 90%;
+            }
+ 
+            aside {
+                height: 310px;
+                width: 200px;
+                padding: 0 15px;
+                background-color: #FFF;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 3px 3px 5px #d4d7dd;
+                @include media(48em) {
+                    width: 100%;
+                    height: 200px;
+                    padding: 0;
+                    background-color: $light-blue;
+                    box-shadow: none;
+                }
+                div {
+                    height: 100px;
+                    width: 100px;
+                    @include image('../../healthcarelib/images/hlo-icons/values-2.png',contain);
+                    @include media(48em) {
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+                p {
+                    line-height: 1.4em;
+                    @include font-settings($sans-pro,1em,$hero-color,300);
+                }
+            }
+        }//END #y-icons-container
+    }//END #philo-sec
+
+
+    //START management
+    article#team {
+        height: auto;
+        width: 100%;
+
+        .main-title-box {
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px 0;
+            text-align: center;
+            @include font-settings($sans-pro,1.8em,#333,400);
+        }
+
+        #team-container {
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+            padding: 100px 0;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            @include media(43em) {
+                flex-direction: column;
+            }
+ 
+            .ind-container {
+                width: auto;
+                text-align: center;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                box-shadow: 3px 3px 5px #d4d7dd;
+                padding: 20px 10px;
+                p {
+                    &:nth-child(1) {
+                        @include font-settings($sans-pro,1em,$hero-color,300);                       
+                    }
+                }
+                .mug {
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 50%;
+                    @include media(55em) {
+                        height: 120px;
+                        width: 120px;
+                    }
+                }
+                .emp-info {
+                    padding: 13px 0 0 0;
+                    p {
+                        &:nth-child(1) {
+                            @include font-settings($sans-pro,1.2em,$hero-color,300);
+                            span {
+                                font-weight: 400;
+                            }
+                        }
+                        &:nth-child(2) {
+                            @include font-settings($sans-pro,1em,#666,300);
+                        }           
+                    }
+                }
+
+                #emp-one {
+                    @include image('../../healthcarelib/images/rabboni-mug.png',contain);
+                    -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
+                }
+                #emp-two {
+                     @include image('../../../Desktop/me/ted-mug.png',contain);                          -webkit-filter: grayscale(1);
+                    filter: grayscale(1);         
+                }
+
+                .social-container {
+                    a {
+                        @include href(#535353);
+                        i {
+                            padding: 7px 5px 0 5px;
+                            font-size: 1.2em;
+                        }
+                    }
+                    .twitter:hover {
+                        color: $twitter-color;
+                    }
+                    .wordpress:hover {
+                        color: $wordpress-color;
+                    }
+                    .github:hover {
+                        color: $github-color;
+                    }
+                }
+            }
+        }//END #team-container
+    }//END team
+
+
+
+
+
+
+
+
+
 
 }//END main-container
 
 
 
 
-
+// font settings (f,s,c,w)
 
 

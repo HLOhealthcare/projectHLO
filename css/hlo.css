@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans|Permanent+Marker|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans|Source+Sans+Pro:200,300,400,600|Permanent+Marker|Oswald");
 *, body {
   padding: 0;
   margin: 0;
@@ -8,13 +8,7 @@ header {
   background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../../../Desktop/seasia.png");
   background-repeat: repeat;
   background-position: 0px 0px;
-  padding-bottom: 75px;
-  animation: animatedBackground 30s linear infinite; }
-@keyframes animatedBackground {
-  0%, 100% {
-    background-position: 0 0; }
-  50% {
-    background-position: 100% 100%; } }
+  padding-bottom: 75px; }
   header nav.navbar {
     height: 65px;
     display: -webkit-flex;
@@ -26,8 +20,26 @@ header {
       margin-top: 10px;
       text-align: center;
       line-height: 60px; }
+      header nav.navbar > div:nth-child(1) {
+        margin-left: 15px;
+        background-image: url("../../healthcarelib/images/angel-logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; }
       header nav.navbar > div:nth-child(3) {
         flex-grow: 1; }
+      @media only screen and (max-width: 45em) {
+        header nav.navbar > div:nth-child(4) {
+          display: none; } }
+      @media only screen and (max-width: 40em) {
+        header nav.navbar > div:nth-child(5) {
+          display: none; } }
+      @media only screen and (max-width: 40em) {
+        header nav.navbar > div:nth-child(6) {
+          display: none; } }
+      @media only screen and (max-width: 40em) {
+        header nav.navbar > div:nth-child(7) {
+          display: none; } }
       header nav.navbar > div > a {
         padding: 0 25px;
         color: #FFF;
@@ -50,6 +62,9 @@ header {
     margin: 30px auto 0 auto;
     padding: 50px 0;
     text-align: center; }
+    @media only screen and (max-width: 48em) {
+      header #title-box {
+        width: 90%; } }
     header #title-box p {
       color: #FFF;
       font-family: "Open sans", sans-serif;
@@ -73,6 +88,11 @@ header {
     border-radius: 10px;
     color: #333;
     border: 5px solid #FFF; }
+    @media only screen and (max-width: 48em) {
+      header #white-sheet {
+        margin: 15px auto;
+        width: 75%;
+        background-color: #FFF; } }
     header #white-sheet #inner-container {
       text-align: center;
       padding: 20px 0 30px 0; }
@@ -92,12 +112,27 @@ header {
         align-items: center;
         flex-direction: row;
         perspective: 1000px; }
+        @media only screen and (max-width: 48em) {
+          header #white-sheet #inner-container #icon-container {
+            perspective: 1; } }
+        @media only screen and (max-width: 32em) {
+          header #white-sheet #inner-container #icon-container {
+            flex-direction: column; } }
         header #white-sheet #inner-container #icon-container #icon-container-one {
           transform: rotateY(40deg); }
+          @media only screen and (max-width: 48em) {
+            header #white-sheet #inner-container #icon-container #icon-container-one {
+              transform: rotateY(0); } }
         header #white-sheet #inner-container #icon-container #icon-container-two {
           transform: rotateY(0deg); }
+          @media only screen and (max-width: 48em) {
+            header #white-sheet #inner-container #icon-container #icon-container-two {
+              transform: rotateY(0); } }
         header #white-sheet #inner-container #icon-container #icon-container-three {
           transform: rotateY(320deg); }
+          @media only screen and (max-width: 48em) {
+            header #white-sheet #inner-container #icon-container #icon-container-three {
+              transform: rotateY(0); } }
         header #white-sheet #inner-container #icon-container > aside {
           position: relative;
           display: -webkit-flex;
@@ -114,10 +149,15 @@ header {
           font-family: "Helvetica Neue", Arial, sans-serif;
           font-size: 1.1em;
           font-weight: 300; }
-          header #white-sheet #inner-container #icon-container > aside:hover {
-            transform: rotate(0); }
+          @media only screen and (max-width: 48em) {
+            header #white-sheet #inner-container #icon-container > aside {
+              background-color: none;
+              box-shadow: none; } }
           header #white-sheet #inner-container #icon-container > aside:nth-child(odd) {
             border: 10px solid #FFF; }
+            @media only screen and (max-width: 48em) {
+              header #white-sheet #inner-container #icon-container > aside:nth-child(odd) {
+                border: none; } }
           header #white-sheet #inner-container #icon-container > aside a {
             position: absolute;
             height: 100%;
@@ -125,6 +165,10 @@ header {
           header #white-sheet #inner-container #icon-container > aside .main-icons {
             height: 150px;
             width: 150px; }
+            @media only screen and (max-width: 48em) {
+              header #white-sheet #inner-container #icon-container > aside .main-icons {
+                height: 100px;
+                width: 100px; } }
           header #white-sheet #inner-container #icon-container > aside #first-icon {
             background-image: url("../../healthcarelib/images/hlo-icons/mission-2.png");
             background-size: contain;
@@ -146,7 +190,378 @@ header {
             padding: 20px; }
 
 main.main-container {
-  height: 600px;
   width: 100%; }
+  main.main-container #programs-sec {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+    main.main-container #programs-sec .main-title-box {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.8em;
+      font-weight: 400; }
+    main.main-container #programs-sec .container-separator {
+      width: 100%;
+      text-align: center;
+      padding: 45px 0; }
+    main.main-container #programs-sec #at1 #au1 #uhealth-icon {
+      position: relative;
+      height: 60px;
+      width: 60px;
+      background-image: url("../../healthcarelib/images/hlo-icons/values-2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+      main.main-container #programs-sec #at1 #au1 #uhealth-icon::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 70px;
+        display: inline-block;
+        height: 2px;
+        width: 300px;
+        margin: 0 auto;
+        background-color: #777; }
+        @media only screen and (max-width: 48em) {
+          main.main-container #programs-sec #at1 #au1 #uhealth-icon::before {
+            width: 230px; } }
+        @media only screen and (max-width: 40em) {
+          main.main-container #programs-sec #at1 #au1 #uhealth-icon::before {
+            width: 200px; } }
+        @media only screen and (max-width: 35em) {
+          main.main-container #programs-sec #at1 #au1 #uhealth-icon::before {
+            width: 130px; } }
+      main.main-container #programs-sec #at1 #au1 #uhealth-icon::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        display: inline-block;
+        height: 2px;
+        width: 300px;
+        margin: 0 auto;
+        background-color: #777; }
+        @media only screen and (max-width: 48em) {
+          main.main-container #programs-sec #at1 #au1 #uhealth-icon::after {
+            width: 230px; } }
+        @media only screen and (max-width: 40em) {
+          main.main-container #programs-sec #at1 #au1 #uhealth-icon::after {
+            width: 200px; } }
+        @media only screen and (max-width: 35em) {
+          main.main-container #programs-sec #at1 #au1 #uhealth-icon::after {
+            width: 130px; } }
+    main.main-container #programs-sec #at1 #au1 p.para {
+      width: 90%;
+      margin: 0 auto; }
+    main.main-container #programs-sec #at2 {
+      padding-bottom: 50px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      @media only screen and (max-width: 48em) {
+        main.main-container #programs-sec #at2 {
+          flex-direction: column;
+          flex-wrap: no-wrap; } }
+      main.main-container #programs-sec #at2 #bu1 {
+        width: 100%; }
+        main.main-container #programs-sec #at2 #bu1 #ucare-icon {
+          position: relative;
+          height: 60px;
+          width: 60px;
+          background-image: url("../../healthcarelib/images/hlo-icons/services-2.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+          main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 70px;
+            display: inline-block;
+            height: 2px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #777; }
+            @media only screen and (max-width: 48em) {
+              main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
+                width: 230px; } }
+            @media only screen and (max-width: 40em) {
+              main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
+                width: 200px; } }
+            @media only screen and (max-width: 35em) {
+              main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
+                width: 130px; } }
+          main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: 70px;
+            display: inline-block;
+            height: 2px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #777; }
+            @media only screen and (max-width: 48em) {
+              main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
+                width: 230px; } }
+            @media only screen and (max-width: 40em) {
+              main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
+                width: 200px; } }
+            @media only screen and (max-width: 35em) {
+              main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
+                width: 130px; } }
+      main.main-container #programs-sec #at2 #bu2 {
+        width: 48%;
+        padding-top: 50px; }
+        main.main-container #programs-sec #at2 #bu2 p.para {
+          width: 80%;
+          margin: 0 auto; }
+        @media only screen and (max-width: 48em) {
+          main.main-container #programs-sec #at2 #bu2 {
+            width: 100%; } }
+      main.main-container #programs-sec #at2 .empty {
+        flex-grow: 1; }
+        @media only screen and (max-width: 60em) {
+          main.main-container #programs-sec #at2 .empty {
+            display: none; } }
+      main.main-container #programs-sec #at2 #bu3 {
+        width: 48%;
+        padding-top: 50px; }
+        @media only screen and (max-width: 48em) {
+          main.main-container #programs-sec #at2 #bu3 {
+            width: 100%; } }
+        main.main-container #programs-sec #at2 #bu3 .gallery-grid {
+          height: 300px;
+          width: 500px;
+          background-image: url("../../healthcarelib/images/gallery-grid.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+          @media only screen and (max-width: 55em) {
+            main.main-container #programs-sec #at2 #bu3 .gallery-grid {
+              height: auto;
+              height: 250px;
+              width: 400px; } }
+          @media only screen and (max-width: 48em) {
+            main.main-container #programs-sec #at2 #bu3 .gallery-grid {
+              width: 80%;
+              margin: 0 auto; } }
+    main.main-container #programs-sec section {
+      text-align: center;
+      justify-content: space-between; }
+      main.main-container #programs-sec section aside {
+        margin: 0 auto; }
+        main.main-container #programs-sec section aside .title {
+          letter-spacing: .05em;
+          color: #303030;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-size: 2.5em;
+          font-weight: 200; }
+          @media only screen and (max-width: 48em) {
+            main.main-container #programs-sec section aside .title {
+              font-size: 2.0em; } }
+          @media only screen and (max-width: 40em) {
+            main.main-container #programs-sec section aside .title {
+              font-size: 1.6em; } }
+        main.main-container #programs-sec section aside .intro {
+          color: #303030;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-size: 1.8em;
+          font-weight: 200; }
+          @media only screen and (max-width: 48em) {
+            main.main-container #programs-sec section aside .intro {
+              font-size: 1.5em; } }
+          @media only screen and (max-width: 40em) {
+            main.main-container #programs-sec section aside .intro {
+              font-size: 1.3em; } }
+        main.main-container #programs-sec section aside .para {
+          color: #303030;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-size: 1.2em;
+          font-weight: 200; }
+          @media only screen and (max-width: 48em) {
+            main.main-container #programs-sec section aside .para {
+              font-size: 1.1em; } }
+          @media only screen and (max-width: 40em) {
+            main.main-container #programs-sec section aside .para {
+              font-size: 1em; } }
+        main.main-container #programs-sec section aside .icon-hero {
+          margin: 0 auto; }
+        main.main-container #programs-sec section aside p {
+          padding: 10px 0;
+          line-height: 1.5; }
+          main.main-container #programs-sec section aside p span {
+            font-weight: 400; }
+  main.main-container #y-sec {
+    height: auto;
+    width: 100%;
+    background-color: #F4F7FF; }
+    main.main-container #y-sec .main-title-box {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.8em;
+      font-weight: 400; }
+    main.main-container #y-sec #y-icons-container {
+      height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      padding: 40px 0 75px 0; }
+      @media only screen and (max-width: 48em) {
+        main.main-container #y-sec #y-icons-container {
+          width: 75%;
+          margin: 0 auto;
+          flex-direction: column; } }
+      @media only screen and (max-width: 40em) {
+        main.main-container #y-sec #y-icons-container {
+          width: 90%; } }
+      main.main-container #y-sec #y-icons-container aside {
+        height: 310px;
+        width: 200px;
+        padding: 0 15px;
+        background-color: #FFF;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px #d4d7dd; }
+        @media only screen and (max-width: 48em) {
+          main.main-container #y-sec #y-icons-container aside {
+            width: 100%;
+            height: 200px;
+            padding: 0;
+            background-color: #F4F7FF;
+            box-shadow: none; } }
+        main.main-container #y-sec #y-icons-container aside div {
+          height: 100px;
+          width: 100px;
+          background-image: url("../../healthcarelib/images/hlo-icons/values-2.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%; }
+          @media only screen and (max-width: 48em) {
+            main.main-container #y-sec #y-icons-container aside div {
+              height: 80px;
+              width: 80px; } }
+        main.main-container #y-sec #y-icons-container aside p {
+          line-height: 1.4em;
+          color: #3E3A67;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 1em;
+          font-weight: 300; }
+  main.main-container article#team {
+    height: auto;
+    width: 100%; }
+    main.main-container article#team .main-title-box {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.8em;
+      font-weight: 400; }
+    main.main-container article#team #team-container {
+      width: 80%;
+      height: 200px;
+      margin: 0 auto;
+      padding: 100px 0;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      @media only screen and (max-width: 43em) {
+        main.main-container article#team #team-container {
+          flex-direction: column; } }
+      main.main-container article#team #team-container .ind-container {
+        width: auto;
+        text-align: center;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 3px 3px 5px #d4d7dd;
+        padding: 20px 10px; }
+        main.main-container article#team #team-container .ind-container p:nth-child(1) {
+          color: #3E3A67;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 1em;
+          font-weight: 300; }
+        main.main-container article#team #team-container .ind-container .mug {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%; }
+          @media only screen and (max-width: 55em) {
+            main.main-container article#team #team-container .ind-container .mug {
+              height: 120px;
+              width: 120px; } }
+        main.main-container article#team #team-container .ind-container .emp-info {
+          padding: 13px 0 0 0; }
+          main.main-container article#team #team-container .ind-container .emp-info p:nth-child(1) {
+            color: #3E3A67;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1.2em;
+            font-weight: 300; }
+            main.main-container article#team #team-container .ind-container .emp-info p:nth-child(1) span {
+              font-weight: 400; }
+          main.main-container article#team #team-container .ind-container .emp-info p:nth-child(2) {
+            color: #666;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1em;
+            font-weight: 300; }
+        main.main-container article#team #team-container .ind-container #emp-one {
+          background-image: url("../../healthcarelib/images/rabboni-mug.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          -webkit-filter: grayscale(1);
+          filter: grayscale(1); }
+        main.main-container article#team #team-container .ind-container #emp-two {
+          background-image: url("../../../Desktop/me/ted-mug.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          -webkit-filter: grayscale(1);
+          filter: grayscale(1); }
+        main.main-container article#team #team-container .ind-container .social-container a {
+          text-decoration: none;
+          color: #535353; }
+          main.main-container article#team #team-container .ind-container .social-container a i {
+            padding: 7px 5px 0 5px;
+            font-size: 1.2em; }
+        main.main-container article#team #team-container .ind-container .social-container .twitter:hover {
+          color: #00aced; }
+        main.main-container article#team #team-container .ind-container .social-container .wordpress:hover {
+          color: #21759B; }
+        main.main-container article#team #team-container .ind-container .social-container .github:hover {
+          color: #000; }
 
 /*# sourceMappingURL=hlo.css.map */
