@@ -27,7 +27,7 @@ html(lang='en')
         link(rel="stylesheet", type="text/css", href="./css/hlo.css")   
 
         // font-awesome
-        link(rel="stylesheet", type="text/css" href="../healthcarelib/libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
+        link(rel="stylesheet", type="text/css" href="./libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
 
         // animate.css
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw", crossorigin="anonymous")
@@ -38,17 +38,17 @@ html(lang='en')
 
         // scripts
         // AWS path
-        //script(src="./libraries/jQuery/default/main.js")
-        //script(src="./libraries/jQuery/master/ajax.js")
-        //script(src="./libraries/jQuery/master/migrate.js")
+        script(src="./libraries/jQuery/default/main.js")
+        script(src="./libraries/jQuery/master/ajax.js")
+        script(src="./libraries/jQuery/master/migrate.js")
    
         // LOCAL path
         // jquery.js
-        script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
+        //script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
         // ajax.js
-        script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
+        //script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
         // migrate.js
-        script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
+        //script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
             //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
             //
             // Image Gallery
@@ -72,15 +72,19 @@ body
             div 
                 //empty space
             div 
-                a(href="#") Tagalog
+                a(href="#faqs")
             div 
                 a(href="#") Blog
             div 
-                a(href="#") FAQS
+                a(href="#faqs") FAQs
             div 
-                a(href="#" class="rocket") RocketChat
-            //div 
-                a(href="#") 
+                a(href="#", rel="Slack")
+                    i.fa.fa-slack(aria-hidden="true")
+                    | Slack
+            div 
+                a(href="#", rel="Menu")
+                    i.fa.fa-ellipsis-v(aria-hidden="true")
+
 
         #title-box
             p 
@@ -181,7 +185,7 @@ body
                         a.twitter(href="#", rel="Twitter")
                             i.fa.fa-twitter(aria-hidden="true")
                         a.wordpress(href="#", rel="Wordpress")
-                            i.fa.fa-wordpress(aria-hidden="true")                   
+                            i.fa.fa-wordpress(aria-hidden="true")
 
                 .ind-container
                     #emp-two.mug
@@ -191,28 +195,91 @@ body
 
                         p Tech Lead
                     .social-container
-                        a.twitter(href="#", rel="Twitter")
+                        a.twitter(href="https://mobile.twitter.com/ted_diepenbrock", rel="Twitter")
                             i.fa.fa-twitter(aria-hidden="true")
-                        a.github(href="#", rel="Github")
+                        a.github(href="https://github.com/diepenbrock", rel="Github")
                             i.fa.fa-github(aria-hidden="true")
 
 
 
 
+        article#partners
+            .main-title-box 
+                .main-title-text 
+                    | Partners
 
 
 
 
 
 
+        article#faqs
+            .main-title-box 
+                .main-title-text 
+                    | FAQs
+
+
+
+
+        article#conclusion
+            section
+                div
+                    p Join our conversation on 
+                        span Slack 
+                        | to learn about our 
+                        span.bold progress
+                        | , 
+                        span.bold future plans 
+                        | or to 
+                        span.bold contribute 
+                        | to HLO development.
+
+                .slack-container
+                    .slack-button
+                        p
+                            a.github(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+                                i.fa.fa-slack(aria-hidden="true")
+                                | Join Slack
 
 
 
 
 
 
+        footer
+            section
+                div
+                    p HLO Foundation
+                div#footer-extras
+                    aside
+                        p 
+                            a(href="https://healthcarelibraryorg.wordpress.com",rel="Blog") Blog
+                        p 
+                            a(href="#faqs",rel="FAQs") FAQs
+                        p 
+                            a(href="https://github.com/HLOhealthcare/projectHLO",rel="Git Repo") Git Repository
+                    aside
+                        p Get in touch: 
+                        a(href="mailto:hello@healthcarelib.org",rel="email us") hello@healthcarelib.org
 
-                
+                div#social-footer-main-container
+                    .social-footer-sub-container
+                        a.github(href="#", rel="Twitter")
+                            i.fa.fa-twitter(aria-hidden="true")
+                        a.github(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+                            i.fa.fa-slack(aria-hidden="true")
+                        a(href="https://github.com/HLOhealthcare/projectHLO", rel="Github")
+                            i.fa.fa-github(aria-hidden="true")               
+                        a(href="mailto:hello@healthcarelib.org", rel="Paper plane")
+                            i.fa.fa-paper-plane(aria-hidden="true")
+                        a(href="#", rel="Reddit")
+                            i.fa.fa-reddit(aria-hidden="true")
+                        a(href="#", rel="Facebook")
+                            i.fa.fa-facebook(aria-hidden="true")
+
+                div
+                    p Copyright &copy; 2017 HLO. All rights reserved
+
 
 
 

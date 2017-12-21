@@ -5,7 +5,7 @@
   border: 0; }
 
 header {
-  background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../../../Desktop/seasia.png");
+  background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../images/seasia.png");
   background-repeat: repeat;
   background-position: 0px 0px;
   padding-bottom: 75px; }
@@ -22,7 +22,7 @@ header {
       line-height: 60px; }
       header nav.navbar > div:nth-child(1) {
         margin-left: 15px;
-        background-image: url("../../healthcarelib/images/angel-logo.png");
+        background-image: url("../images/angel-logo.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%; }
@@ -40,6 +40,12 @@ header {
       @media only screen and (max-width: 40em) {
         header nav.navbar > div:nth-child(7) {
           display: none; } }
+      header nav.navbar > div:nth-child(8) {
+        display: none; }
+        @media only screen and (max-width: 40em) {
+          header nav.navbar > div:nth-child(8) {
+            display: block;
+            font-size: 1.8em; } }
       header nav.navbar > div > a {
         padding: 0 25px;
         color: #FFF;
@@ -49,14 +55,8 @@ header {
         text-decoration: none;
         color: #FFF;
         display: inline-block; }
-      header nav.navbar > div .rocket::after {
-        content: '';
-        display: inline-block;
-        width: 100%;
-        height: 2px;
-        margin-bottom: 55px;
-        background-color: blue;
-        border-radius: 45px; }
+        header nav.navbar > div > a i {
+          padding-right: 5px; }
   header #title-box {
     width: 700px;
     margin: 30px auto 0 auto;
@@ -170,17 +170,17 @@ header {
                 height: 100px;
                 width: 100px; } }
           header #white-sheet #inner-container #icon-container > aside #first-icon {
-            background-image: url("../../healthcarelib/images/hlo-icons/mission-2.png");
+            background-image: url("../images/hlo-icons/mission-2.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%; }
           header #white-sheet #inner-container #icon-container > aside #second-icon {
-            background-image: url("../../healthcarelib/images/hlo-icons/values-2.png");
+            background-image: url("../images/hlo-icons/values-2.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%; }
           header #white-sheet #inner-container #icon-container > aside #third-icon {
-            background-image: url("../../healthcarelib/images/hlo-icons/vision-2.png");
+            background-image: url("../images/hlo-icons/vision-2.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%; }
@@ -215,7 +215,7 @@ main.main-container {
       position: relative;
       height: 60px;
       width: 60px;
-      background-image: url("../../healthcarelib/images/hlo-icons/values-2.png");
+      background-image: url("../images/hlo-icons/values-2.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
@@ -279,7 +279,7 @@ main.main-container {
           position: relative;
           height: 60px;
           width: 60px;
-          background-image: url("../../healthcarelib/images/hlo-icons/services-2.png");
+          background-image: url("../images/hlo-icons/services-2.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%; }
@@ -338,22 +338,21 @@ main.main-container {
       main.main-container #programs-sec #at2 #bu3 {
         width: 48%;
         padding-top: 50px; }
-        @media only screen and (max-width: 48em) {
+        @media only screen and (max-width: 50em) {
           main.main-container #programs-sec #at2 #bu3 {
             width: 100%; } }
         main.main-container #programs-sec #at2 #bu3 .gallery-grid {
           height: 300px;
-          width: 500px;
-          background-image: url("../../healthcarelib/images/gallery-grid.png");
+          width: 90%;
+          background-image: url("../images/gallery-grid.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%; }
           @media only screen and (max-width: 55em) {
             main.main-container #programs-sec #at2 #bu3 .gallery-grid {
-              height: auto;
               height: 250px;
-              width: 400px; } }
-          @media only screen and (max-width: 48em) {
+              width: 380px; } }
+          @media only screen and (max-width: 50em) {
             main.main-container #programs-sec #at2 #bu3 .gallery-grid {
               width: 80%;
               margin: 0 auto; } }
@@ -417,7 +416,6 @@ main.main-container {
       font-size: 1.8em;
       font-weight: 400; }
     main.main-container #y-sec #y-icons-container {
-      height: 100%;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
@@ -458,7 +456,7 @@ main.main-container {
         main.main-container #y-sec #y-icons-container aside div {
           height: 100px;
           width: 100px;
-          background-image: url("../../healthcarelib/images/hlo-icons/values-2.png");
+          background-image: url("../images/hlo-icons/values-2.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%; }
@@ -486,7 +484,6 @@ main.main-container {
       font-weight: 400; }
     main.main-container article#team #team-container {
       width: 80%;
-      height: 200px;
       margin: 0 auto;
       padding: 100px 0;
       display: -webkit-flex;
@@ -510,6 +507,9 @@ main.main-container {
         align-items: center;
         box-shadow: 3px 3px 5px #d4d7dd;
         padding: 20px 10px; }
+        @media only screen and (max-width: 42em) {
+          main.main-container article#team #team-container .ind-container:nth-child(1) {
+            margin-bottom: 50px; } }
         main.main-container article#team #team-container .ind-container p:nth-child(1) {
           color: #3E3A67;
           font-family: "Source Sans Pro", sans-serif;
@@ -538,14 +538,14 @@ main.main-container {
             font-size: 1em;
             font-weight: 300; }
         main.main-container article#team #team-container .ind-container #emp-one {
-          background-image: url("../../healthcarelib/images/rabboni-mug.png");
+          background-image: url("../images/rabboni-mug.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%;
           -webkit-filter: grayscale(1);
           filter: grayscale(1); }
         main.main-container article#team #team-container .ind-container #emp-two {
-          background-image: url("../../../Desktop/me/ted-mug.png");
+          background-image: url("../images/ted-mug.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%;
@@ -562,6 +562,165 @@ main.main-container {
         main.main-container article#team #team-container .ind-container .social-container .wordpress:hover {
           color: #21759B; }
         main.main-container article#team #team-container .ind-container .social-container .github:hover {
-          color: #000; }
-
-/*# sourceMappingURL=hlo.css.map */
+          color: #bd2c00; }
+  main.main-container article#partners {
+    height: 400px; }
+    main.main-container article#partners .main-title-box {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.8em;
+      font-weight: 400; }
+  main.main-container article#faqs {
+    height: 400px; }
+    main.main-container article#faqs .main-title-box {
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.8em;
+      font-weight: 400; }
+  main.main-container article#conclusion {
+    height: auto;
+    border: 1px dotted #333; }
+    main.main-container article#conclusion section {
+      width: 100%;
+      padding: 75px 0; }
+      main.main-container article#conclusion section div {
+        width: 700px;
+        margin: 0 auto;
+        text-align: center; }
+        @media only screen and (max-width: 48em) {
+          main.main-container article#conclusion section div {
+            width: 90%; } }
+        main.main-container article#conclusion section div p {
+          color: #3E3A67;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 1.9em;
+          font-weight: 300; }
+          @media only screen and (max-width: 48em) {
+            main.main-container article#conclusion section div p {
+              font-size: 1.5em; } }
+          @media only screen and (max-width: 40em) {
+            main.main-container article#conclusion section div p {
+              font-size: 1.3em; } }
+          main.main-container article#conclusion section div p .bold {
+            font-weight: 400; }
+      main.main-container article#conclusion section .slack-container {
+        width: 100%;
+        padding: 50px 0 0 0;
+        text-align: center; }
+        main.main-container article#conclusion section .slack-container .slack-button {
+          height: 70px;
+          width: 260px;
+          background-color: #38C098;
+          opacity: 0.8;
+          border-radius: 40px; }
+          main.main-container article#conclusion section .slack-container .slack-button p {
+            color: #FFF;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1.1em;
+            font-weight: 400;
+            line-height: 3; }
+            main.main-container article#conclusion section .slack-container .slack-button p a {
+              display: block;
+              height: 100%;
+              width: 100%;
+              vertical-align: middle;
+              font-size: 1.3em;
+              padding: 0 10px 0 0;
+              text-decoration: none;
+              color: #FFF; }
+              main.main-container article#conclusion section .slack-container .slack-button p a i {
+                padding-right: 5px; }
+  main.main-container footer {
+    background-color: #0B1742; }
+    main.main-container footer section {
+      color: #FFF;
+      text-align: center;
+      padding: 50px 0; }
+      main.main-container footer section div {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0; }
+        main.main-container footer section div:nth-child(1) {
+          padding-bottom: 15px;
+          color: #FFF;
+          font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+          font-size: 1.3em;
+          font-weight: 200; }
+        main.main-container footer section div:nth-child(2) {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          color: #FFF;
+          font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+          font-size: 0.9em;
+          font-weight: 300; }
+          main.main-container footer section div:nth-child(2) aside {
+            width: 30%; }
+            @media only screen and (max-width: 45em) {
+              main.main-container footer section div:nth-child(2) aside {
+                width: 90%;
+                margin: 0 auto;
+                padding: 35px 0; } }
+            main.main-container footer section div:nth-child(2) aside:nth-child(1) {
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flex;
+              display: flex; }
+              @media only screen and (max-width: 50em) {
+                main.main-container footer section div:nth-child(2) aside:nth-child(1) {
+                  flex-direction: column; } }
+              main.main-container footer section div:nth-child(2) aside:nth-child(1) p {
+                flex: auto; }
+                @media only screen and (max-width: 50em) {
+                  main.main-container footer section div:nth-child(2) aside:nth-child(1) p {
+                    height: 1.7em;
+                    margin: 0 auto; } }
+                main.main-container footer section div:nth-child(2) aside:nth-child(1) p a {
+                  text-decoration: none;
+                  color: #FFF; }
+            @media only screen and (max-width: 45em) {
+              main.main-container footer section div:nth-child(2) aside:nth-child(2) {
+                padding-top: 12px; } }
+            main.main-container footer section div:nth-child(2) aside:nth-child(1) {
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flex;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              main.main-container footer section div:nth-child(2) aside:nth-child(1) p {
+                padding: 0 10px; }
+            main.main-container footer section div:nth-child(2) aside:nth-child(2) a {
+              text-decoration: none;
+              color: #38C098; }
+        main.main-container footer section div:nth-child(3) .social-footer-sub-container a {
+          font-size: 1em;
+          padding: 0 10px;
+          text-decoration: none;
+          color: #38C098; }
+          @media only screen and (max-width: 45em) {
+            main.main-container footer section div:nth-child(3) .social-footer-sub-container a {
+              padding: 0 10px; } }
+        main.main-container footer section div:nth-child(4) {
+          padding-top: 15px;
+          color: #ccc;
+          font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+          font-size: 0.85em;
+          font-weight: 200; }
