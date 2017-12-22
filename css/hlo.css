@@ -4,6 +4,41 @@
   margin: 0;
   border: 0; }
 
+#menu {
+  display: none;
+  position: fixed;
+  top: 65px;
+  right: 20px;
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+  z-index: 1000; }
+  #menu #menu-container {
+    width: 200px; }
+    #menu #menu-container section {
+      -webkit-display: flex;
+      -moz-display: flex;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.4em;
+      font-weight: 300; }
+      #menu #menu-container section div {
+        padding: 10px;
+        font-color: #3E3A67; }
+        #menu #menu-container section div a {
+          text-decoration: none;
+          color: #3E3A67; }
+      #menu #menu-container section:nth-child(1) {
+        flex-direction: column; }
+      #menu #menu-container section:nth-child(2) {
+        flex-direction: row;
+        padding: 10px; }
+
 header {
   background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../images/seasia.png");
   background-repeat: repeat;
@@ -84,6 +119,7 @@ header {
   header #white-sheet {
     position: relative;
     width: 700px;
+    height: 400px;
     margin: 40px auto;
     border-radius: 10px;
     color: #333;
@@ -260,102 +296,6 @@ main.main-container {
     main.main-container #programs-sec #at1 #au1 p.para {
       width: 90%;
       margin: 0 auto; }
-    main.main-container #programs-sec #at2 {
-      padding-bottom: 50px;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center; }
-      @media only screen and (max-width: 48em) {
-        main.main-container #programs-sec #at2 {
-          flex-direction: column;
-          flex-wrap: no-wrap; } }
-      main.main-container #programs-sec #at2 #bu1 {
-        width: 100%; }
-        main.main-container #programs-sec #at2 #bu1 #ucare-icon {
-          position: relative;
-          height: 60px;
-          width: 60px;
-          background-image: url("../images/hlo-icons/services-2.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: 50% 50%; }
-          main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
-            content: '';
-            position: absolute;
-            top: 30px;
-            left: 70px;
-            display: inline-block;
-            height: 2px;
-            width: 300px;
-            margin: 0 auto;
-            background-color: #777; }
-            @media only screen and (max-width: 48em) {
-              main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
-                width: 230px; } }
-            @media only screen and (max-width: 40em) {
-              main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
-                width: 200px; } }
-            @media only screen and (max-width: 35em) {
-              main.main-container #programs-sec #at2 #bu1 #ucare-icon::before {
-                width: 130px; } }
-          main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
-            content: '';
-            position: absolute;
-            top: 30px;
-            right: 70px;
-            display: inline-block;
-            height: 2px;
-            width: 300px;
-            margin: 0 auto;
-            background-color: #777; }
-            @media only screen and (max-width: 48em) {
-              main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
-                width: 230px; } }
-            @media only screen and (max-width: 40em) {
-              main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
-                width: 200px; } }
-            @media only screen and (max-width: 35em) {
-              main.main-container #programs-sec #at2 #bu1 #ucare-icon::after {
-                width: 130px; } }
-      main.main-container #programs-sec #at2 #bu2 {
-        width: 48%;
-        padding-top: 50px; }
-        main.main-container #programs-sec #at2 #bu2 p.para {
-          width: 80%;
-          margin: 0 auto; }
-        @media only screen and (max-width: 48em) {
-          main.main-container #programs-sec #at2 #bu2 {
-            width: 100%; } }
-      main.main-container #programs-sec #at2 .empty {
-        flex-grow: 1; }
-        @media only screen and (max-width: 60em) {
-          main.main-container #programs-sec #at2 .empty {
-            display: none; } }
-      main.main-container #programs-sec #at2 #bu3 {
-        width: 48%;
-        padding-top: 50px; }
-        @media only screen and (max-width: 50em) {
-          main.main-container #programs-sec #at2 #bu3 {
-            width: 100%; } }
-        main.main-container #programs-sec #at2 #bu3 .gallery-grid {
-          height: 300px;
-          width: 90%;
-          background-image: url("../images/gallery-grid.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: 50% 50%; }
-          @media only screen and (max-width: 55em) {
-            main.main-container #programs-sec #at2 #bu3 .gallery-grid {
-              height: 250px;
-              width: 380px; } }
-          @media only screen and (max-width: 50em) {
-            main.main-container #programs-sec #at2 #bu3 .gallery-grid {
-              width: 80%;
-              margin: 0 auto; } }
     main.main-container #programs-sec section {
       text-align: center;
       justify-content: space-between; }
@@ -507,7 +447,7 @@ main.main-container {
         align-items: center;
         box-shadow: 3px 3px 5px #d4d7dd;
         padding: 20px 10px; }
-        @media only screen and (max-width: 42em) {
+        @media only screen and (max-width: 43em) {
           main.main-container article#team #team-container .ind-container:nth-child(1) {
             margin-bottom: 50px; } }
         main.main-container article#team #team-container .ind-container p:nth-child(1) {
@@ -559,10 +499,10 @@ main.main-container {
             font-size: 1.2em; }
         main.main-container article#team #team-container .ind-container .social-container .twitter:hover {
           color: #00aced; }
-        main.main-container article#team #team-container .ind-container .social-container .wordpress:hover {
-          color: #21759B; }
         main.main-container article#team #team-container .ind-container .social-container .github:hover {
           color: #bd2c00; }
+        main.main-container article#team #team-container .ind-container .social-container .linkedin:hover {
+          color: #0077B5; }
   main.main-container article#partners {
     height: 400px; }
     main.main-container article#partners .main-title-box {
@@ -718,9 +658,25 @@ main.main-container {
           @media only screen and (max-width: 45em) {
             main.main-container footer section div:nth-child(3) .social-footer-sub-container a {
               padding: 0 10px; } }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(1):hover {
+            color: #00aced; }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(2):hover {
+            color: #0f7965; }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(3):hover {
+            color: #bd2c00; }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(4):hover {
+            color: #21759B; }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(5):hover {
+            color: #FFF; }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(6):hover {
+            color: #FF5700; }
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(7):hover {
+            color: #3b5998; }
         main.main-container footer section div:nth-child(4) {
           padding-top: 15px;
           color: #ccc;
           font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
           font-size: 0.85em;
           font-weight: 200; }
+
+/*# sourceMappingURL=hlo.css.map */
