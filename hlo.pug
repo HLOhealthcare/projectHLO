@@ -27,7 +27,7 @@ html(lang='en')
         link(rel="stylesheet", type="text/css", href="./css/hlo.css")   
 
         // font-awesome
-        link(rel="stylesheet", type="text/css" href="./libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
+        link(rel="stylesheet", type="text/css" href="../healthcarelib/libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
 
         // animate.css
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw", crossorigin="anonymous")
@@ -38,18 +38,18 @@ html(lang='en')
 
         // scripts
         // AWS path
-        script(src="./libraries/jQuery/default/main.js")
-        script(src="./libraries/jQuery/master/ajax.js")
-        script(src="./libraries/jQuery/master/migrate.js")
+        //script(src="./libraries/jQuery/default/main.js")
+        //script(src="./libraries/jQuery/master/ajax.js")
+        //script(src="./libraries/jQuery/master/migrate.js")
    
         // LOCAL path
         // jquery.js
-        //script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
+        script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
         // ajax.js
-        //script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
+        script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
         // migrate.js
-        //script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
-            //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
+        //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
             //
             // Image Gallery
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
@@ -58,8 +58,33 @@ html(lang='en')
 
 body
 
+    #menu
+        #menu-container
+            section#menu-section1
+                div
+                    a.menu-link(href="#") Blog
+                div
+                    a.menu-link(href="#faqs") Team
+                div
+                    a.menu-link(href="#faqs") FAQs
 
-    header
+
+            section#menu-section2
+                div
+                    a.menu-link(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+                        i.fa.fa-slack(aria-hidden="true")
+
+                div
+                    a.menu-link(href="mailto:hello@healthcarelib.org", rel="Paper plane")
+                         i.fa.fa-paper-plane(aria-hidden="true")
+
+                div
+                    a.menu-link(href="https://healthcarelibraryorg.wordpress.com", rel="Wordpress")
+                        i.fa.fa-wordpress(aria-hidden="true")
+                            
+
+
+    header#header
 
         .canvas
         .searchlight
@@ -81,19 +106,21 @@ body
                 a(href="#", rel="Slack")
                     i.fa.fa-slack(aria-hidden="true")
                     | Slack
-            div 
+            div#activate-menu 
                 a(href="#", rel="Menu")
                     i.fa.fa-ellipsis-v(aria-hidden="true")
+                
+
 
 
         #title-box
             p 
                 | An 
                 span open and transparent 
-                | not for profit care organization 
-            p Hello friends, welcome to HLO! It stands for Health library and Care organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought "Uhealth" and "Ucare" programs.
+                | not for profit health organization 
+            p Hello friends, welcome to HLO! It stands for Healthcare Library organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought "Uhealth"program.
         #white-sheet
-            #inner-container
+            //#inner-container
                 #text-container
                     p 
                     p What makes us unique
@@ -101,7 +128,7 @@ body
                     aside#icon-container-one
                         a(href="#" alt="mission")
                         #first-icon.main-icons
-                        p Programs
+                        p Uhealth
                     aside#icon-container-two
                         a(href="#" alt="value")
                         #second-icon.main-icons
@@ -134,7 +161,7 @@ body
             .container-separator
                 .section-separator
 
-            section#at2
+            //section#at2
                 aside#bu1
                     #ucare-icon.icon-hero
                     p.title "Ucare" Organization
@@ -150,7 +177,7 @@ body
 
 
 
-        // Philosophy
+        // Why HLO
         article#y-sec
             .main-title-box
                 p.main-title-text Why HLO?
@@ -182,11 +209,9 @@ body
 
                         p Project Lead
                     .social-container
-                        a.twitter(href="#", rel="Twitter")
-                            i.fa.fa-twitter(aria-hidden="true")
-                        a.wordpress(href="#", rel="Wordpress")
-                            i.fa.fa-wordpress(aria-hidden="true")
-
+                        a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn")
+                            i.fa.fa-linkedin(aria-hidden="true")
+                
                 .ind-container
                     #emp-two.mug
                     .emp-info
@@ -264,16 +289,31 @@ body
 
                 div#social-footer-main-container
                     .social-footer-sub-container
-                        a.github(href="#", rel="Twitter")
+
+                        // twitter
+                        a(href="#", rel="Twitter")
                             i.fa.fa-twitter(aria-hidden="true")
-                        a.github(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+
+                        // slack
+                        a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
                             i.fa.fa-slack(aria-hidden="true")
+
+                        // github
                         a(href="https://github.com/HLOhealthcare/projectHLO", rel="Github")
-                            i.fa.fa-github(aria-hidden="true")               
+                            i.fa.fa-github(aria-hidden="true")
+
+                        // wordpress
+                        a(href="https://healthcarelibraryorg.wordpress.com", rel="Wordpress")
+                            i.fa.fa-wordpress(aria-hidden="true")                           
+                        // email
                         a(href="mailto:hello@healthcarelib.org", rel="Paper plane")
                             i.fa.fa-paper-plane(aria-hidden="true")
+                        
+                        // reddit
                         a(href="#", rel="Reddit")
                             i.fa.fa-reddit(aria-hidden="true")
+
+                        // facebook
                         a(href="#", rel="Facebook")
                             i.fa.fa-facebook(aria-hidden="true")
 

@@ -43,7 +43,8 @@ $twitter-color: #00aced;
 $facebook-color: #3b5998;
 $github-color: #bd2c00;
 $slack-color: #0f7965;
-
+$reddit-color: #FF5700;
+$linkedin-color: #0077B5;
 
 
 // Mixins
@@ -89,6 +90,47 @@ $slack-color: #0f7965;
     margin: 0;
     border: 0;
 }
+
+// menu-display 
+#menu {
+    display: none;
+    position: fixed;
+    top: 65px;
+    right: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    z-index: 1000;
+
+    #menu-container {
+        width: 200px;
+        section {
+            -webkit-display: flex;
+            -moz-display: flex;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            @include font-settings($sans-pro,1.4em,#333,300);
+            div {
+                padding: 10px;
+                font-color: $hero-color;
+                a {
+                    @include href($hero-color);
+                }
+            }
+
+            &:nth-child(1) {
+                flex-direction: column;
+            }
+            &:nth-child(2) {
+                flex-direction: row;
+                padding: 10px;
+            }
+        }
+    }//END #menu-container
+}//END #menu
 
 header {
     background: linear-gradient( rgba(56,192,152,1), rgba(56,192,152,0.5)), url('../images/seasia.png');
@@ -229,6 +271,7 @@ header {
     #white-sheet {
         position: relative;
         width: 700px;
+        height: 400px;
         margin: 40px auto;
         border-radius: 10px;
         color: #333;
@@ -427,111 +470,111 @@ main.main-container {
             }//END #au1
         }//END #at1
 
-        #at2 {
-            padding-bottom: 50px;
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            @include media(48em) {
-                flex-direction: column;
-                flex-wrap: no-wrap;
-            }
-            #bu1 {
-                width: 100%;
-                #ucare-icon {
-                    position: relative;
-                    height: 60px;
-                    width: 60px;
-                    @include image('../images/hlo-icons/services-2.png',contain);
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 30px;
-                        left: 70px;
-                        display: inline-block;
-                        height: 2px;
-                        width: 300px;
-                        margin: 0 auto;
-                        background-color: #777;
-                        @include media(48em) {
-                            width: 230px;
-                        }
-                        @include media(40em) {
-                            width: 200px;
-                        }
-                        @include media(35em) {
-                            width: 130px;
-                        }
-                    }
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        top: 30px;
-                        right: 70px;
-                        display: inline-block;
-                        height: 2px;
-                        width: 300px;
-                        margin: 0 auto;
-                        background-color: #777;
-                        @include media(48em) {
-                            width: 230px;
-                        }
-                        @include media(40em) {
-                            width: 200px;
-                        }
-                        @include media(35em) {
-                            width: 130px;
-                        }
-                    }
-                }
-            }
+        //#at2 {
+        //    padding-bottom: 50px;
+        //    display: -webkit-flex;
+        //    display: -ms-flex;
+        //    display: flex;
+        //    flex-direction: row;
+        //    flex-wrap: wrap;
+        //    align-items: center;
+        //    justify-content: center;
+        //    @include media(48em) {
+        //        flex-direction: column;
+        //        flex-wrap: no-wrap;
+        //    }
+        //    #bu1 {
+        //        width: 100%;
+        //        #ucare-icon {
+        //            position: relative;
+        //            height: 60px;
+        //            width: 60px;
+        //            @include image('../images/hlo-icons/services-2.png',contain);
+        //            &::before {
+        //                content: '';
+        //                position: absolute;
+        //                top: 30px;
+        //                left: 70px;
+        //                display: inline-block;
+        //                height: 2px;
+        //                width: 300px;
+        //                margin: 0 auto;
+        //                background-color: #777;
+        //                @include media(48em) {
+        //                    width: 230px;
+        //                }
+        //                @include media(40em) {
+        //                    width: 200px;
+        //                }
+        //                @include media(35em) {
+        //                    width: 130px;
+        //                }
+        //            }
+        //            &::after {
+        //                content: '';
+        //                position: absolute;
+        //                top: 30px;
+        //                right: 70px;
+        //                display: inline-block;
+        //                height: 2px;
+        //                width: 300px;
+        //                margin: 0 auto;
+        //                background-color: #777;
+        //                @include media(48em) {
+        //                    width: 230px;
+        //                }
+        //                @include media(40em) {
+        //                    width: 200px;
+        //                }
+        //                @include media(35em) {
+        //                    width: 130px;
+        //                }
+        //            }
+        //        }
+        //    }
 
-            #bu2 {
-                width: 48%;
-                padding-top: 50px;
-                p.para {
-                    width: 80%;
-                    margin: 0 auto;
-                }
-                @include media(55em) {
-                
-                }
-                @include media(48em) {
-                    width: 100%;
-                }
-            }
-            .empty {
-                flex-grow: 1;
-                @include media(60em) {
-                    display: none;
-                }
-            }
-            #bu3 {
-                width: 48%;
-                padding-top: 50px;
+        //    #bu2 {
+        //        width: 48%;
+        //        padding-top: 50px;
+        //        p.para {
+        //            width: 80%;
+        //            margin: 0 auto;
+        //        }
+        //        @include media(55em) {
+        //        
+        //        }
+        //        @include media(48em) {
+        //            width: 100%;
+        //        }
+        //    }
+        //    .empty {
+        //        flex-grow: 1;
+        //        @include media(60em) {
+        //            display: none;
+        //        }
+        //    }
+        //    #bu3 {
+        //        width: 48%;
+        //        padding-top: 50px;
 
-                @include media(50em) {
-                    width: 100%;
-                }
-                .gallery-grid {
-                    height: 300px;
-                    width: 90%;
-                    @include image('../images/gallery-grid.png',contain);
-                    @include media(55em) {
-                        height: 250px;
-                        width: 380px;
-                    }
-                    @include media(50em) {
-                        width: 80%;
-                        margin: 0 auto;
-                    }
-                }               
-            }
-        }//END at2
+        //        @include media(50em) {
+        //            width: 100%;
+        //        }
+        //        .gallery-grid {
+        //            height: 300px;
+        //            width: 90%;
+        //            @include image('../images/gallery-grid.png',contain);
+        //            @include media(55em) {
+        //                height: 250px;
+        //                width: 380px;
+        //            }
+        //            @include media(50em) {
+        //                width: 80%;
+        //                margin: 0 auto;
+        //            }
+        //        }               
+        //    }
+        //}//END at2
 
         // default elements
 
@@ -694,7 +737,7 @@ main.main-container {
                 box-shadow: 3px 3px 5px #d4d7dd;
                 padding: 20px 10px;
                 &:nth-child(1) {
-                    @include media(42em) {
+                    @include media(43em) {
                         margin-bottom: 50px;
                     }
                 }
@@ -749,11 +792,11 @@ main.main-container {
                     .twitter:hover {
                         color: $twitter-color;
                     }
-                    .wordpress:hover {
-                        color: $wordpress-color;
-                    }
                     .github:hover {
                         color: $github-color;
+                    }
+                    .linkedin:hover {
+                        color: $linkedin-color;
                     }
                 }
             }
@@ -949,6 +992,41 @@ main.main-container {
                             @include href($light-green);
                             @include media(45em) {
                                 padding: 0 10px;
+                            }
+                            &:nth-child(1) {
+                                &:hover {
+                                    color: $twitter-color;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &:hover {
+                                    color: $slack-color;
+                                }
+                            }
+                            &:nth-child(3) {
+                                &:hover {
+                                    color: $github-color;
+                                }
+                            }
+                            &:nth-child(4) {
+                                &:hover {
+                                    color: $wordpress-color;
+                                }
+                            }
+                            &:nth-child(5) {
+                                &:hover {
+                                    color: #FFF;
+                                }
+                            }
+                            &:nth-child(6) {
+                                &:hover {
+                                    color: $reddit-color;
+                                }
+                            }
+                            &:nth-child(7) {
+                                &:hover {
+                                    color: $facebook-color;
+                                }
                             }
                         }
                     }
