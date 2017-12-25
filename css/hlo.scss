@@ -196,7 +196,7 @@ header {
             line-height: 60px;
             &:nth-child(1) {
                 margin-left: 15px;
-                @include image('../images/angel-logo.png',contain);
+                @include image('../../../Desktop/hlo-logo.png',contain);
             }
             &:nth-child(3) {
                 flex-grow: 1;
@@ -276,10 +276,11 @@ header {
         border-radius: 10px;
         color: #333;
         border: 5px solid #FFF;
+        @include image('../../../Desktop/hlo-logo-title.png',contain);
         @include media(48em) {
             margin: 15px auto;
             width: 75%;
-            background-color: #FFF;
+            //background-color: #FFF;
         }
         #inner-container {
             text-align: center;
