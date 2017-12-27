@@ -91,7 +91,7 @@ $linkedin-color: #0077B5;
     border: 0;
 }
 
-// menu-display 
+// menu-display for small devices
 #menu {
     display: none;
     position: fixed;
@@ -136,7 +136,11 @@ header {
     background: linear-gradient( rgba(56,192,152,1), rgba(56,192,152,0.5)), url('../images/seasia.png');
     background-repeat: repeat;
     background-position: 0px 0px;
-    padding-bottom: 75px;
+    height: 100vh;
+    @include media(55em) {
+        height: auto;
+        padding-bottom: 50px;
+    }
 
     //animation: animatedBackground 30s linear infinite;
     //@keyframes animatedBackground {
@@ -196,7 +200,7 @@ header {
             line-height: 60px;
             &:nth-child(1) {
                 margin-left: 15px;
-                @include image('../../../Desktop/hlo-logo.png',contain);
+                @include image('../../../Desktop/original-book-logo.png',contain);
             }
             &:nth-child(3) {
                 flex-grow: 1;
@@ -270,18 +274,18 @@ header {
     }//END title-box
     #white-sheet {
         position: relative;
-        width: 700px;
-        height: 400px;
+        width: auto;
+        height: 300px;
         margin: 40px auto;
         border-radius: 10px;
         color: #333;
-        border: 5px solid #FFF;
-        @include image('../../../Desktop/hlo-logo-title.png',contain);
+        @include image('../../../Desktop/original-book-logo.png',contain);
         @include media(48em) {
             margin: 15px auto;
-            width: 75%;
+            height: 150px;
             //background-color: #FFF;
         }
+
         #inner-container {
             text-align: center;
             padding: 20px 0 30px 0;
