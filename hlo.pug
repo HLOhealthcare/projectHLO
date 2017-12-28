@@ -8,7 +8,7 @@ html(lang='en')
         meta(name="description", content="Description goes here")
         meta(name="keywords", content="healthcare library, healthcarelibrary, healthcarelib, healthcarelib.org, HLO")
 
-        title HLO • Home
+        title HLO Foundation
         
         // facebook og
         meta(property="og:title", content="Healthcare Library")
@@ -27,7 +27,7 @@ html(lang='en')
         link(rel="stylesheet", type="text/css", href="./css/hlo.css")   
 
         // font-awesome
-        link(rel="stylesheet", type="text/css" href="../healthcarelib/libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
+        link(rel="stylesheet", type="text/css" href="./libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
 
         // animate.css
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw", crossorigin="anonymous")
@@ -44,14 +44,18 @@ html(lang='en')
    
         // LOCAL path
         // jquery.js
-        script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
+        //script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
         // ajax.js
-        script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
+        //script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
         // migrate.js
         script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
-        //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-            //
-            // Image Gallery
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+
+        // jQuery popup overlay (remove this)
+        //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.9/jquery.popupoverlay.js")
+
+        // Image Gallery
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
 
@@ -62,7 +66,7 @@ body
         #menu-container
             section#menu-section1
                 div
-                    a.menu-link(href="#") Blog
+                    a.menu-link(href="https://healthcarelibraryorg.wordpress.com") Blog
                 div
                     a.menu-link(href="#team") Team
                 div
@@ -90,9 +94,9 @@ body
 
         nav.navbar
             div 
-                a(href="#") 
-            div 
-                a(href="#") HLO
+                a(href="#")
+            div
+
             div 
                 //empty space
             div 
@@ -113,12 +117,15 @@ body
 
 
         #title-box
+
             p 
                 | An 
                 span open and transparent 
                 | not for profit health foundation
+
             p Hello friends, welcome to HLO! It stands for Healthcare Library organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought "Uhealth"program.
-        #white-sheet
+
+        //#white-sheet
             //#inner-container
                 #text-container
                     p 
@@ -193,6 +200,9 @@ body
                    
 
 
+        // fixed popup displays
+
+
         article#team
             .main-title-box 
                 .main-title-text 
@@ -201,12 +211,29 @@ body
 
             #team-container
                 .ind-container
+                    .modal-container
+                        input#modal-toggle(type="checkbox")
+                        label.modal-btn(for="modal-toggle")
+                            | About me
+                        label.modal-backdrop(for="modal-toggle")
+                        .modal-content
+                            label.modal-close(for="modal-toggle")
+                                i.fa.fa-times(aria-hidden="true")
+
+                            h2 My story
+                            p Working as medical laboratory profesional as a career had engaged me an advantage. Early years in my career as licensed professional in my hometown I right on dedicated mysef for community causes and initiatives particularly drawn to be a service volunteer in some areas of my country, Philippines. Having been exposed to very poor communities, it oepned the eyes of my heart to mind that as much as I have been given with what I have, I will give back. lateryears as a laboratory professional, I have worked as a chapter service representative ina non profit organization and a volunteer to other service departments. As a medical technologist, the knowledge and capacity to give back in ways I can was possible by being a volunteer myself for others - from my hometow, national region, Asia country and more.
+                            i "Only a lived call is a fulfilled life"  
+                            i ~ Rabboni Calunsag
+                            div
+                                a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn") 
+                                    i.fa.fa-linkedin(aria-hidden="true")
+
                     #emp-one.mug
                     .emp-info
                         p Rabboni 
                             span Calunsag
 
-                        p Project Lead
+                        p Founder
                     .social-container
                         a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn")
                             i.fa.fa-linkedin(aria-hidden="true")
@@ -289,10 +316,6 @@ body
                 div#social-footer-main-container
                     .social-footer-sub-container
 
-                        // twitter
-                        a(href="#", rel="Twitter")
-                            i.fa.fa-twitter(aria-hidden="true")
-
                         // slack
                         a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
                             i.fa.fa-slack(aria-hidden="true")
@@ -307,13 +330,8 @@ body
                         // email
                         a(href="mailto:hello@healthcarelib.org", rel="Paper plane")
                             i.fa.fa-paper-plane(aria-hidden="true")
-                        
-                        // reddit
-                        a(href="#", rel="Reddit")
-                            i.fa.fa-reddit(aria-hidden="true")
-
-                        // facebook
-                        a(href="#", rel="Facebook")
+                                                // facebook
+                        a(href="https://healthcarelibraryorg.wordpress.com", rel="Facebook")
                             i.fa.fa-facebook(aria-hidden="true")
 
                 div
