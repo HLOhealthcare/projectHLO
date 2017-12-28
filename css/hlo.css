@@ -43,11 +43,52 @@ header {
   background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../images/seasia.png");
   background-repeat: repeat;
   background-position: 0px 0px;
-  height: 100vh; }
+  height: 100vh;
+  animation: animatedBackground 30s linear infinite; }
   @media only screen and (max-width: 55em) {
     header {
       height: auto;
-      padding-bottom: 50px; } }
+      padding-bottom: 50px;
+      animation: animatedBackground 60s linear infinite; } }
+@keyframes animatedBackground {
+  0%, 100% {
+    background-position: 0 0; }
+  50% {
+    background-position: 100% 100%; } }
+  header .searchlight {
+    position: absolute;
+    z-index: 100;
+    height: 300px;
+    width: 300px;
+    border-width: 100vh 100vw;
+    border-style: solid;
+    border-color: #000;
+    top: -100vh;
+    left: -100vw;
+    cursor: none;
+    background: #000;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    opacity: 0.3; }
+    @media only screen and (max-width: 55em) {
+      header .searchlight {
+        display: none; } }
+  header .searchlight.on {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, black 60%, black 100%);
+    /* FF3.6+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, black 60%, black 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, black 60%, black 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, black 60%, black 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, black 60%, black 100%);
+    /* W3C */ }
+    @media only screen and (max-width: 55em) {
+      header .searchlight.on {
+        display: none; } }
   header nav.navbar {
     height: 65px;
     display: -webkit-flex;
@@ -61,7 +102,7 @@ header {
       line-height: 60px; }
       header nav.navbar > div:nth-child(1) {
         margin-left: 15px;
-        background-image: url("../../../Desktop/original-book-logo.png");
+        background-image: url("../images/original-book-logo.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%; }
@@ -123,11 +164,11 @@ header {
   header #white-sheet {
     position: relative;
     width: auto;
-    height: 300px;
+    height: 200px;
     margin: 40px auto;
     border-radius: 10px;
     color: #333;
-    background-image: url("../../../Desktop/original-book-logo.png");
+    background-image: url("../images/original-book-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%; }
@@ -484,14 +525,14 @@ main.main-container {
             font-size: 1em;
             font-weight: 300; }
         main.main-container article#team #team-container .ind-container #emp-one {
-          background-image: url("../images/rabboni-mug.png");
+          background-image: url("../images/lead-selfie.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%;
           -webkit-filter: grayscale(1);
           filter: grayscale(1); }
         main.main-container article#team #team-container .ind-container #emp-two {
-          background-image: url("../images/ted-mug.png");
+          background-image: url("../images/tech-selfie.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: 50% 50%;
@@ -567,6 +608,8 @@ main.main-container {
           background-color: #38C098;
           opacity: 0.8;
           border-radius: 40px; }
+          main.main-container article#conclusion section .slack-container .slack-button:hover {
+            opacity: 0.7; }
           main.main-container article#conclusion section .slack-container .slack-button p {
             color: #FFF;
             font-family: "Source Sans Pro", sans-serif;
@@ -664,20 +707,8 @@ main.main-container {
           @media only screen and (max-width: 45em) {
             main.main-container footer section div:nth-child(3) .social-footer-sub-container a {
               padding: 0 10px; } }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(1):hover {
-            color: #00aced; }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(2):hover {
-            color: #0f7965; }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(3):hover {
-            color: #bd2c00; }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(4):hover {
-            color: #21759B; }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(5):hover {
+          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:hover {
             color: #FFF; }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(6):hover {
-            color: #FF5700; }
-          main.main-container footer section div:nth-child(3) .social-footer-sub-container a:nth-child(7):hover {
-            color: #3b5998; }
         main.main-container footer section div:nth-child(4) {
           padding-top: 15px;
           color: #ccc;
