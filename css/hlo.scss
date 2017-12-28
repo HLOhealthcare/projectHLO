@@ -823,7 +823,17 @@ main.main-container {
                         transition: opacity 0.2s ease-in; 
                     }
                     .modal-content {
-                    
+                        
+                        .selfie-thumb {
+                            @include image('../images/lead-selfie.png',contain);
+                            height: 50px;
+                            width: 50px;
+                            padding: 0;
+                            border-radius: 25px;
+                            -webkit-filter: grayscale(1);
+                            filter: grayscale(1);
+                            
+                        }                   
                         h2 {
                             @include font-settings($sans-pro, $hero-color,1.6em,400);
                         }
@@ -1059,8 +1069,10 @@ main.main-container {
                     background-color: $light-green;
                     opacity: 0.8;
                     border-radius: 40px;    
+                    transition: opacity 0.3s ease-in;
+
                     &:hover {
-                        opacity: 0.7;
+                        opacity: 1;
                     }
                     p {
                         @include font-settings($sans-pro,1.1em,#FFF, 400);
