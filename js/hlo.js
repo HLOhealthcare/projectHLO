@@ -51,10 +51,8 @@ $(function() {
 });
 
 
-// animated popups
-
-
-
+// bounce in top logo
+$('#bounceInLogo').addClass('animated bounceInLeft');
 
 
 // Spotlight effect

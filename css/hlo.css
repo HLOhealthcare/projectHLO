@@ -493,8 +493,10 @@ main.main-container {
               box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6); }
               @media only screen and (max-width: 35em) {
                 main.main-container article#team #team-container .ind-container .modal-container #modal-toggle.active ~ .modal-content, main.main-container article#team #team-container .ind-container .modal-container #modal-toggle:checked ~ .modal-content {
-                  left: 5%;
-                  right: 5%; } }
+                  top: 7%;
+                  left: 8px;
+                  max-height: 75%;
+                  overflow-y: auto; } }
         main.main-container article#team #team-container .ind-container p:nth-child(1) {
           color: #3E3A67;
           font-family: "Source Sans Pro", sans-serif;

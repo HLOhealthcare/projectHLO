@@ -928,8 +928,10 @@ main.main-container {
                             cursor: auto;
                             visibility: visible;      
                             box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);                            @include media(35em) {
-                                left: 5%;
-                                right: 5%;
+                                top: 7%;
+                                left: 8px;
+                                max-height: 75%;
+                                overflow-y: auto;
                             }
                         }
                     }

@@ -11,16 +11,16 @@ html(lang='en')
         title HLO Foundation
         
         // facebook og
-        meta(property="og:title", content="Healthcare Library")
+        meta(property="og:title", content="Haleau Foundation")
         meta(property="og:site_name", content="healthcarelib.org")
         meta(property="og:title", content="http://healthcarelib.org")
-        meta(property="og:image", content="")
+        meta(property="og:image", content="./favicon/favicon@400.png")
         meta(property="og:description", content="description")
         
         // twitter og
         meta(property="twitter:site", content="healthcarelib.org")
-        meta(property="twitter:card" content="description")
-        meta(property="twitter:title" content="Healthcare Library")
+        meta(property="twitter:card" content="Description goes here")
+        meta(property="twitter:title" content="Haleau Foundation")
 
 
         // main stylesheets
@@ -31,9 +31,34 @@ html(lang='en')
 
         // animate.css
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw", crossorigin="anonymous")
+        //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+
 
         // Add icon files 
+        
+        // MS
+        // IE 10 Metro tile icon
+        meta(name="msapplication-TileColor", content="FFFFFF")
+        meta(name="msapplication-TileImage", content="./favicon/favicon@144.png")
+        // IE 11 Tile for Windows 8.1 Start Screen
+        meta(name="application-name", content="Haleau")
+        meta(name="msapplication-config", content="browserconfig.xml")
+        // Address bar favicons
+        link(rel="shortcut icon", href="./favicon/favicon@16.ico", type="image/x-icon")
+        link(rel="shortcut icon", href="./favicon/favicon@32.ico", type="image/x-icon")
 
+        // iOS and OSX 
+        link(rel="apple-touch-icon", sizes="57x57", href="./favicon/favicon@57.png")
+        link(rel="apple-touch-icon", sizes="72x72", href="./favicon/favicon@72.png")
+        link(rel="apple-touch-icon", sizes="114x114", href="./favicon/favicon@114.png")
+        link(rel="apple-touch-icon", sizes="144x144", href="./favicon/favicon@144.png")
+        link(rel="apple-touch-icon", sizes="152x152", href="./favicon/favicon@152.png")
+        link(rel="apple-touch-icon", sizes="167x167", href="./favicon/favicon@167.png")
+        link(rel="apple-touch-icon", sizes="180x180", href="./favicon/favicon@180.png")
+
+        // Universal 
+        link(rel="icon", sizes="152x152", href="./favicon/favicon@152.png")
+        link(rel="icon", sizes="192x192", href="./favicon/favicon@192.png")
 
 
         // scripts
@@ -44,19 +69,16 @@ html(lang='en')
    
         // LOCAL path
         // jquery.js
-        //script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
+        script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
         // ajax.js
-        //script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
+        script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
         // migrate.js
         script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 
-
-        // jQuery popup overlay (remove this)
-        //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.9/jquery.popupoverlay.js")
 
         // Image Gallery
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
+        //link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
 
 
@@ -70,7 +92,7 @@ body
                 div
                     a.menu-link(href="#team") Team
                 div
-                    a.menu-link(href="#faqs") FAQs
+                    a.menu-link(href="#faqs") Join Slack
 
 
             section#menu-section2
@@ -93,7 +115,7 @@ body
         .searchlight
 
         nav.navbar
-            div 
+            div.animated.slideInLeft
                 a(href="#")
             div
 
@@ -104,7 +126,7 @@ body
             div 
                 a(href="#") Blog
             div 
-                a(href="#faqs") FAQs
+                a(href="#faqs") Team
             div 
                 a(href="#", rel="Slack")
                     i.fa.fa-slack(aria-hidden="true")
@@ -123,9 +145,10 @@ body
                 span open and transparent 
                 | not for profit health foundation
 
-            p Hello friends, welcome to HLO! It stands for Healthcare Library organization. We are a socially responsible not for profit community strategically contextualizing for our global partners with our well thought "Uhealth"program.
-
-        //#white-sheet
+            p With our aim to be socially responsible organization, we act from every well thought approach in great valuewith you as our principle. Come support HLO by becoming a member and partner. Enjoy our "uHealth" service offers and with that you also give back to the world through our "uCare" program.
+            
+            
+            //#white-sheet
             //#inner-container
                 #text-container
                     p 
@@ -190,17 +213,15 @@ body
             section#y-icons-container
                 aside#first
                     #y-icon-one
-                    p The green cherry from mars left the side before alice covered the sky from the new rock that was enlarged by the developing powers of the underworld.
+                    p Save money by cutting health costs today and in the future!
                 aside#second
                     #y-icon-two
-                    p The green cherry from mars left the side before alice covered the sky from the new rock that was enlarged by the developing powers of the underworld.
+                    p Live longer by allowing us to manage your health with regular checkups and more!
                 aside#third
                     #y-icon-three
-                    p The green cherry from mars left the side before alice covered the sky from the new rock that was enlarged by the developing powers of the underworld.
+                    p Stay stress free for your future with 'uHeath'!
                    
 
-
-        // fixed popup displays
 
 
         article#team
