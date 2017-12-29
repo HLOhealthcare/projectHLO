@@ -407,16 +407,22 @@ main.main-container {
             cursor: pointer;
             transition: opacity 0.2s ease-in; }
           main.main-container article#team #team-container .ind-container .modal-container .modal-content .selfie-thumb {
-            background-image: url("../images/lead-selfie.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
             height: 50px;
             width: 50px;
             padding: 0;
             border-radius: 25px;
             -webkit-filter: grayscale(1);
             filter: grayscale(1); }
+          main.main-container article#team #team-container .ind-container .modal-container .modal-content #founder-thumb {
+            background-image: url("../images/lead-selfie.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; }
+          main.main-container article#team #team-container .ind-container .modal-container .modal-content #tech-thumb {
+            background-image: url("../images/tech-selfie.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; }
           main.main-container article#team #team-container .ind-container .modal-container .modal-content h2 {
             color: 1.6em;
             font-family: "Source Sans Pro", sans-serif;
@@ -439,7 +445,7 @@ main.main-container {
               color: "#FFF"; }
               main.main-container article#team #team-container .ind-container .modal-container .modal-content div a i {
                 font-size: 1.2em;
-                color: #0077B5; }
+                color: #3E3A67; }
           main.main-container article#team #team-container .ind-container .modal-container .modal-close {
             color: #aaa;
             position: absolute;
@@ -472,9 +478,9 @@ main.main-container {
             main.main-container article#team #team-container .ind-container .modal-container .modal-content-btn:hover {
               color: #fff;
               background: #365690; }
-          main.main-container article#team #team-container .ind-container .modal-container #modal-toggle {
+          main.main-container article#team #team-container .ind-container .modal-container .modal-toggle {
             display: none; }
-            main.main-container article#team #team-container .ind-container .modal-container #modal-toggle.active ~ .modal-backdrop, main.main-container article#team #team-container .ind-container .modal-container #modal-toggle:checked ~ .modal-backdrop {
+            main.main-container article#team #team-container .ind-container .modal-container .modal-toggle.active ~ .modal-backdrop, main.main-container article#team #team-container .ind-container .modal-container .modal-toggle:checked ~ .modal-backdrop {
               background-color: rgba(0, 0, 0, 0.6);
               width: 100vw;
               height: 100vh;
@@ -486,7 +492,7 @@ main.main-container {
               visibility: visible;
               opacity: 1;
               transition: opacity 0.2s ease-in; }
-            main.main-container article#team #team-container .ind-container .modal-container #modal-toggle.active ~ .modal-content, main.main-container article#team #team-container .ind-container .modal-container #modal-toggle:checked ~ .modal-content {
+            main.main-container article#team #team-container .ind-container .modal-container .modal-toggle.active ~ .modal-content, main.main-container article#team #team-container .ind-container .modal-container .modal-toggle:checked ~ .modal-content {
               opacity: 1;
               background-color: #FFF;
               height: auto;
@@ -503,7 +509,7 @@ main.main-container {
               visibility: visible;
               box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6); }
               @media only screen and (max-width: 35em) {
-                main.main-container article#team #team-container .ind-container .modal-container #modal-toggle.active ~ .modal-content, main.main-container article#team #team-container .ind-container .modal-container #modal-toggle:checked ~ .modal-content {
+                main.main-container article#team #team-container .ind-container .modal-container .modal-toggle.active ~ .modal-content, main.main-container article#team #team-container .ind-container .modal-container .modal-toggle:checked ~ .modal-content {
                   top: 7%;
                   left: 8px;
                   max-height: 75%;

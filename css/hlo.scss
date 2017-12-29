@@ -833,7 +833,6 @@ main.main-container {
                     .modal-content {
                         
                         .selfie-thumb {
-                            @include image('../images/lead-selfie.png',contain);
                             height: 50px;
                             width: 50px;
                             padding: 0;
@@ -841,7 +840,13 @@ main.main-container {
                             -webkit-filter: grayscale(1);
                             filter: grayscale(1);
                             
+                        }
+                        #founder-thumb {
+                            @include image('../images/lead-selfie.png',contain);
                         }                   
+                        #tech-thumb {
+                             @include image('../images/tech-selfie.png',contain);                       
+                        }
                         h2 {
                             @include font-settings($sans-pro, $hero-color,1.6em,400);
                         }
@@ -854,14 +859,14 @@ main.main-container {
                         i {
                             text-align: center;
                         }
-                        // linkedin
+                        // social icon
                         div {
                             padding-top: 20px;
                             a {
                                 @include href("#FFF");
                                 i {
                                     font-size: 1.2em;
-                                    color: $linkedin-color;
+                                    color: $hero-color;
                                 }
                             }
                         }
@@ -903,7 +908,7 @@ main.main-container {
                             color: #fff; background: #365690; 
                         }
                     }
-                    #modal-toggle {
+                    .modal-toggle {
                         display: none;  
                         &.active ~ .modal-backdrop,
                         &:checked ~ .modal-backdrop {
