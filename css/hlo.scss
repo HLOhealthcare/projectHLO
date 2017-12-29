@@ -700,11 +700,19 @@ main.main-container {
                 div {
                     height: 100px;
                     width: 100px;
-                    @include image('../images/hlo-icons/values-2.png',contain);
                     @include media(48em) {
                         height: 80px;
                         width: 80px;
                     }
+                }
+                #y-icon-one {
+                    @include image('../images/my-piggie-bank.png',contain);
+                }
+                #y-icon-two {
+                    @include image('../images/my-cupcake.png',contain);
+                }
+                #y-icon-three {
+                    @include image('../images/my-meditation.png',contain);
                 }
                 p {
                     line-height: 1.4em;
