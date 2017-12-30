@@ -17,9 +17,7 @@
   ],
   "dependencies": {
     "jquery": "3.2.1",
-    "slideout.js":"0.0.2",
-    "components-font-awesome":"4.7.0",
-    "animate.css":"animate.min.css"
+    "components-font-awesome":"4.7.0"
   }
 }
 

@@ -4,41 +4,6 @@
   margin: 0;
   border: 0; }
 
-#menu {
-  display: none;
-  position: fixed;
-  top: 65px;
-  right: 20px;
-  padding: 20px;
-  background-color: #FFF;
-  border-radius: 10px;
-  z-index: 1000; }
-  #menu #menu-container {
-    width: 200px; }
-    #menu #menu-container section {
-      -webkit-display: flex;
-      -moz-display: flex;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
-      color: #333;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 1.4em;
-      font-weight: 300; }
-      #menu #menu-container section div {
-        padding: 10px;
-        font-color: #3E3A67; }
-        #menu #menu-container section div a {
-          text-decoration: none;
-          color: #3E3A67; }
-      #menu #menu-container section:nth-child(1) {
-        flex-direction: column; }
-      #menu #menu-container section:nth-child(2) {
-        flex-direction: row;
-        padding: 10px; }
-
 header {
   background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../images/seasia.png");
   background-repeat: repeat;
@@ -283,6 +248,8 @@ main.main-container {
         align-items: center;
         border-radius: 5px;
         box-shadow: 3px 3px 5px #d4d7dd; }
+        main.main-container #y-sec #y-icons-container aside:hover {
+          box-shadow: 6px 6px 5px #d4d7dd; }
         @media only screen and (max-width: 48em) {
           main.main-container #y-sec #y-icons-container aside {
             width: 100%;
