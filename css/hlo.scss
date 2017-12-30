@@ -92,45 +92,52 @@ $linkedin-color: #0077B5;
 }
 
 // menu-display for small devices
-#menu {
-    display: none;
-    position: fixed;
-    top: 65px;
-    right: 20px;
-    padding: 20px;
-    background-color: #FFF;
-    border-radius: 10px;
-    z-index: 1000;
+//#menu {
+//    display: none;
+//    position: fixed;
+//    top: 65px;
+//    right: 20px;
+//    padding: 20px;
+//    background-color: #FFF;
+//    border-radius: 10px;
+//    z-index: 1000;
+//
+//    #menu-container {
+//        width: 200px;
+//        section {
+//            -webkit-display: flex;
+//            -moz-display: flex;
+//            display: flex;
+//            justify-content: space-evenly;
+//            align-items: center;
+//            text-align: center;
+//            padding: 10px;
+//            @include font-settings($sans-pro,1.4em,#333,300);
+//            div {
+//                padding: 10px;
+//                font-color: $hero-color;
+//                a {
+//                    @include href($hero-color);
+//                }
+//            }
+//
+//            &:nth-child(1) {
+//                flex-direction: column;
+//            }
+//            &:nth-child(2) {
+//                flex-direction: row;
+//                padding: 10px;
+//            }
+//        }
+//    }//END #menu-container
+//}//END #menu
 
-    #menu-container {
-        width: 200px;
-        section {
-            -webkit-display: flex;
-            -moz-display: flex;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-            @include font-settings($sans-pro,1.4em,#333,300);
-            div {
-                padding: 10px;
-                font-color: $hero-color;
-                a {
-                    @include href($hero-color);
-                }
-            }
 
-            &:nth-child(1) {
-                flex-direction: column;
-            }
-            &:nth-child(2) {
-                flex-direction: row;
-                padding: 10px;
-            }
-        }
-    }//END #menu-container
-}//END #menu
+
+
+
+
+// Start header
 
 header {
     background: linear-gradient( rgba(56,192,152,1), rgba(56,192,152,0.5)), url('../images/seasia.png');
@@ -291,124 +298,6 @@ header {
         }
 
     }//END title-box
-    //#white-sheet {
-    //    position: relative;
-    //    width: auto;
-    //    height: 300px;
-    //    margin: 40px auto;
-    //    border-radius: 40px;
-    //    color: #333;
-    //    @include image('../images/original-book-logo-2.png',contain);
-    //    @include media(48em) {
-    //        margin: 15px auto;
-    //        height: 150px;
-    //        //background-color: #FFF;
-    //    }
-
-    //    #inner-container {
-    //        text-align: center;
-    //        padding: 20px 0 30px 0;
-    //        #text-container {
-    //            margin: 10px 0 30px 0;       
-
-    //            p {
-    //                @include font-settings($neue,1.3em,#333,300);
-    //            }
-    //        }
-    //        #icon-container {
-    //            display: -webkit-flex;
-    //            display: -moz-flex;
-    //            display: -ms-flex;
-    //            display: flex;
-    //            justify-content: space-evenly;
-    //            align-items: center;
-    //            flex-direction: row;
-    //            perspective: 1000px;
-    //            @include media(48em) {
-    //                perspective: 1;
-    //            }
-    //            @include media(32em) {
-    //                flex-direction: column;
-    //            }
-    //            #icon-container-one {
-    //                transform: rotateY(40deg);
-    //                @include media(48em) {
-    //                    transform: rotateY(0);
-    //                }
-    //            }
-    //            #icon-container-two {
-    //                transform: rotateY(0deg);
-    //                @include media(48em) {
-    //                    transform: rotateY(0);
-    //                }
-    //            }
-    //            #icon-container-three {
-    //                transform: rotateY(320deg);
-    //                @include media(48em) {
-    //                    transform: rotateY(0);
-    //                }
-    //            }
-    //            
-    //            > aside {
-    //                position:relative;
-    //                display: -webkit-flex;
-    //                display: -moz-flex;
-    //                display: -ms-flex;
-    //                display: flex;
-    //                justify-content: space-evenly;
-    //                align-items: center;
-    //                flex-direction: column;
-    //                background-color: #FFF;
-    //                border-radius: 4px;
-    //                box-shadow: 2px 2px 4px #99B7DB;
-    //                @include font-settings($neue,1.1em,#333,300);                   @include media(48em) {
-    //                    background-color: none;
-    //                    box-shadow: none;
-    //                }
-    //                &:nth-child(odd) {
-    //                    border: 10px solid #FFF;
-    //                    @include media(48em) {
-    //                        border: none;   
-    //                    }
-    //                }
-
-    //                a {
-    //                    position: absolute;
-    //                    height: 100%;
-    //                    width: 100%;
-    //                }
-    //                
-    //                .main-icons {
-    //                    height: 150px;
-    //                    width: 150px;
-    //                    @include media(48em) {
-    //                        height: 100px;
-    //                        width: 100px;
-    //                    }
-    //                }
-
-    //                #first-icon {
-    //                    @include image('../images/hlo-icons/mission-2.png',contain);
-    //                }
-
-    //                #second-icon {
-    //                    @include image('../images/hlo-icons/values-2.png',contain);                   
-    //                }
-
-    //                #third-icon {
-    //                    @include image('../images/hlo-icons/vision-2.png',contain);
-    //                }
-
-    //                p {
-    //                    border-top: 1px solid $light-green;
-    //                    text-align: center;
-    //                    padding: 20px;
-
-    //                }
-    //            }
-    //        }
-    //    }//END inner-container
-    //}//END white-sheet
 } //END heder
 
 
@@ -689,6 +578,9 @@ main.main-container {
                 align-items: center;
                 border-radius: 5px;
                 box-shadow: 3px 3px 5px #d4d7dd;
+                &:hover {
+                    box-shadow: 6px 6px 5px #d4d7dd;
+                }
                 @include media(48em) {
                     width: 100%;
                     height: 200px;

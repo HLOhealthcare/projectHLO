@@ -1,7 +1,14 @@
 
 
 
-// anchor scroll effect
+
+// ANIMATE.CSS (bounce in logo)
+$('#bounceInLogo').addClass('animated bounceInLeft');
+
+
+
+
+// ANCHOR SCROLL EFFECT
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -32,7 +39,7 @@ $('a[href*="#"]')
   });
 
 
-// display menu
+// DISPLAY OLD MENU
 //$(function() {
 //    $('#activate-menu').on('click', function() {
 //        $('#menu').toggle();
@@ -51,11 +58,8 @@ $('a[href*="#"]')
 //});
 
 
-// bounce in top logo
-$('#bounceInLogo').addClass('animated bounceInLeft');
 
-
-// Spotlight effect
+// SPOTLIGHT EFFECT
 //$('.searchlight')
 //    .on('mousemove', function(event) {
 //        $(this).addClass('on').css({'margin-left': event.pageX - 150, 'margin-top': event.pageY - 150});
@@ -73,7 +77,10 @@ $('#bounceInLogo').addClass('animated bounceInLeft');
 //
 //
 //
-//// fancyBox v3.2
+
+
+
+//// FANCYBOX VERSION 3.2
 //$('#test').on('click',function() {
 //    
 //    $.fancybox.open([
