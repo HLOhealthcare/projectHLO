@@ -1,0 +1,27 @@
+{
+  "name": "hlo-website",
+  "authors": [
+    "Ted Diepenbrock <unoirok08@gmail.com>"
+  ],
+  "description": "Bower packages for the hlo website",
+  "main": "development",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.2.1",
+    "slideout.js":"0.0.2",
+    "components-font-awesome":"4.7.0",
+    "animate.css":"animate.min.css"
+  }
+}
+
+
+

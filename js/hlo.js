@@ -33,22 +33,22 @@ $('a[href*="#"]')
 
 
 // display menu
-$(function() {
-    $('#activate-menu').on('click', function() {
-        $('#menu').toggle();
-    });
-    // hide menu onclick link
-    $('.menu-link').on('click', function() {
-        $('#menu').toggle();
-    });
-});
-
-// hide menu on scroll
-$(function() {
-    $(window).scroll(function() {
-        $('#menu').fadeOut();
-    });
-});
+//$(function() {
+//    $('#activate-menu').on('click', function() {
+//        $('#menu').toggle();
+//    });
+//    // hide menu onclick link
+//    $('.menu-link').on('click', function() {
+//        $('#menu').toggle();
+//    });
+//});
+//
+//// hide menu on scroll
+//$(function() {
+//    $(window).scroll(function() {
+//        $('#menu').fadeOut();
+//    });
+//});
 
 
 // bounce in top logo

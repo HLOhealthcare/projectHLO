@@ -444,8 +444,7 @@ main.main-container {
                     position: relative;
                     height: 60px;
                     width: 60px;
-                    
-                    @include image('../images/hlo-icons/values-2.png',contain);
+                    @include image('../favicon/favicon@144.png',contain);
                     &::before {
                         content: '';
                         position: absolute;
