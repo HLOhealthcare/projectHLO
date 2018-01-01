@@ -5,384 +5,357 @@ html(lang='en')
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
         meta(http-equiv="X-UA-Compatable" content="IE=edge")
         meta(name="viewport", content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0")
-        meta(name="description", content="Description goes here")
-        meta(name="keywords", content="healthcare library, healthcarelibrary, healthcarelib, healthcarelib.org, HLO")
+        meta(name="description", content="A health and care foundation where your health is our value.")
+        meta(name="keywords", content="uhealth, healthcare library, healthcarelibrary, healthcarelib, healthcarelib.org, HLO")
+
 
         title HLO Foundation
         
         // facebook og
-        meta(property="og:title", content="Haleau Foundation")
+        meta(property="og:title", content="HLO Foundation")
         meta(property="og:site_name", content="healthcarelib.org")
         meta(property="og:title", content="http://healthcarelib.org")
-        meta(property="og:image", content="./favicon/favicon@400.png")
-        meta(property="og:description", content="description")
+        meta(property="og:image", content="/favicon/favicon@400.png")
+        meta(property="og:description", content="A health and care foundation where your health is our value.")
         
         // twitter og
         meta(property="twitter:site", content="healthcarelib.org")
-        meta(property="twitter:card" content="Description goes here")
-        meta(property="twitter:title" content="Haleau Foundation")
-
+        meta(property="twitter:card", content="A health and care foundation where your health is our value.")
+        meta(property="twitter:title", content="HLO Foundation")
+        meta(property="twitter:image", content="/favicon/favicon@400.png")
 
         // main stylesheets
-        link(rel="stylesheet", type="text/css", href="./css/hlo.css")   
+        link(rel="stylesheet", type="text/css", href="css/hlo.css")   
 
-        // font-awesome
-        link(rel="stylesheet", type="text/css" href="./libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
+        // aws font-awesome
+        link(rel="stylesheet", type="text/css", href="libraries/font-awesome-4.7-2.0/css/font-awesome.min.css")
+        // local font-awesome
+        //link(rel="stylesheet", type="text/css", href="../../bower_components/components-font-awesome/css/font-awesome.min.css")
 
         // animate.css
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw", crossorigin="anonymous")
-        //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+        //link(rel="stylesheet", type="text/css", href="./libraries/animate.min.css")
 
 
-        // Add icon files 
+        // FAVICONS
         
         // MS
         // IE 10 Metro tile icon
         meta(name="msapplication-TileColor", content="FFFFFF")
-        meta(name="msapplication-TileImage", content="./favicon/favicon@144.png")
-        // IE 11 Tile for Windows 8.1 Start Screen
-        meta(name="application-name", content="Haleau")
-        meta(name="msapplication-config", content="browserconfig.xml")
-        // Address bar favicons
-        link(rel="shortcut icon", href="./favicon/favicon@16.ico", type="image/x-icon")
-        link(rel="shortcut icon", href="./favicon/favicon@32.ico", type="image/x-icon")
+        meta(name="msapplication-TileImage", content="/favicon/favicon@144.png")
 
-        // iOS and OSX 
-        link(rel="apple-touch-icon", sizes="57x57", href="./favicon/favicon@57.png")
-        link(rel="apple-touch-icon", sizes="72x72", href="./favicon/favicon@72.png")
-        link(rel="apple-touch-icon", sizes="114x114", href="./favicon/favicon@114.png")
-        link(rel="apple-touch-icon", sizes="144x144", href="./favicon/favicon@144.png")
-        link(rel="apple-touch-icon", sizes="152x152", href="./favicon/favicon@152.png")
-        link(rel="apple-touch-icon", sizes="167x167", href="./favicon/favicon@167.png")
-        link(rel="apple-touch-icon", sizes="180x180", href="./favicon/favicon@180.png")
+        // IE 11 Tile for Windows 8.1 Start Screen
+        meta(name="application-name", content="HLO")
+        meta(name="msapplication-config", content="browserconfig.xml")
+        // Address Bar Favicons
+        link(rel="shortcut icon", href="/favicon/favicon@16.ico", type="image/x-icon")
+        link(rel="shortcut icon", href="/favicon/favicon@32.ico", type="image/x-icon")
+
+        // iOS and OSX Favicons
+        link(rel="apple-touch-icon", sizes="57x57", href="/favicon/favicon@57.png", type="image/png")
+        link(rel="apple-touch-icon", sizes="72x72", href="/favicon/favicon@72.png", type="image/png")
+        link(rel="apple-touch-icon", sizes="114x114", href="/favicon/favicon@114.png", type="image/png")
+        link(rel="apple-touch-icon", sizes="144x144", href="/favicon/favicon@144.png", type="image/png")
+        link(rel="apple-touch-icon", sizes="152x152", href="/favicon/favicon@152.png", type="image/png")
+        link(rel="apple-touch-icon", sizes="167x167", href="/favicon/favicon@167.png", type="image/png")
+        link(rel="apple-touch-icon", sizes="180x180", href="/favicon/favicon@180.png", type="image/png")
 
         // Universal 
-        link(rel="icon", sizes="152x152", href="./favicon/favicon@152.png")
-        link(rel="icon", sizes="192x192", href="./favicon/favicon@192.png")
+        link(rel="icon", sizes="152x152", href="/favicon/favicon@152.png", type="image/png")
+        link(rel="icon", sizes="192x192", href="/favicon/favicon@192.png", type="image/png")
 
 
-        // scripts
-        // AWS path
-        script(src="./libraries/jQuery/default/main.js")
-        script(src="./libraries/jQuery/master/ajax.js")
-        script(src="./libraries/jQuery/master/migrate.js")
-   
-        // LOCAL path
-        // jquery.js
-        script(src="../../Documents/developer/LIBRARIES/jQuery2.1.1/jquery-2.1.1.min.js")
-        // ajax.js
-        script(src="../../Documents/libraries/jquery-migrate-master/src/ajax.js")
-        // migrate.js
-        script(src="../../Documents/libraries/jquery-migrate-master/src/migrate.js")
-        //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        // Scripts
+        // jQuery aws
+        script(type="text/javascript", src="libraries/jQuery/default/main.js")
+        // jquery local
+        //script(src="../../bower_components/jquery/dist/jquery.min.js")
 
 
-        // Image Gallery
+        // Fancybox for image gallery (will likely use dimsemenov/Magnific-Popup)
         //link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
         //script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
 
 
-body
-    // menu for small devices
-    #menu
-        #menu-container
-            section#menu-section1
-                div
-                    a.menu-link(href="https://healthcarelibraryorg.wordpress.com") Blog
-                div
-                    a.menu-link(href="#team") Team
-                div
-                    a.menu-link(href="#faqs") Join Slack
+    body
 
+        // wraps entire page 
+        .main-wrapper
 
-            section#menu-section2
-                div
-                    a.menu-link(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
-                        i.fa.fa-slack(aria-hidden="true")
-
-                div
-                    a.menu-link(href="mailto:hello@healthcarelib.org", rel="Paper plane")
-                         i.fa.fa-paper-plane(aria-hidden="true")
-
-                div
-                    a.menu-link(href="https://healthcarelibraryorg.wordpress.com", rel="Wordpress")
-                        i.fa.fa-wordpress(aria-hidden="true")
-                            
-    
-    header#header
-
-        .canvas
-        .searchlight
-
-        nav.navbar
-            div.animated.slideInLeft
-                a(href="#")
-            div
-
-            div 
-                //empty space
-            div 
-                a(href="#")
-            div 
-                a(href="#") Blog
-            div 
-                a(href="#faqs") Team
-            div 
-                a(href="#", rel="Slack")
-                    i.fa.fa-slack(aria-hidden="true")
-                    | Slack
-            div#activate-menu 
-                a(href="#", rel="Menu")
-                    i.fa.fa-ellipsis-v(aria-hidden="true")
-                
-
-
-
-        #title-box
-
-            p 
-                | An 
-                span open and transparent 
-                | not for profit health foundation
-
-            p With our aim to be socially responsible organization, we act from every well thought approach in great valuewith you as our principle. Come support HLO by becoming a member and partner. Enjoy our "uHealth" service offers and with that you also give back to the world through our "uCare" program.
-            
-            
-            //#white-sheet
-            //#inner-container
-                #text-container
-                    p 
-                    p What makes us unique
-                #icon-container
-                    aside#icon-container-one
-                        a(href="#" alt="mission")
-                        #first-icon.main-icons
-                        p Uhealth
-                    aside#icon-container-two
-                        a(href="#" alt="value")
-                        #second-icon.main-icons
-                        p Philosophy
-                    aside#icon-container-three
-                        a(href="#" alt="vision")
-                        #third-icon.main-icons
-                        p Principles
-
-        // END HEADER 
-
-
-    // START MAIN 
-    main.main-container
-        // Programs
-        article#programs-sec 
-            .main-title-box
-                p.main-title-text What is HLO?
-            section#at1
-                aside#au1
-                    #uhealth-icon.icon-hero
-                    p.title "Uhealth" Library
-                    p.intro 
-                        span Uhealth 
-                        | is your Health wants and needs program!
-                    p.para Our services program offers a subsidized healthcare cost for general full laboratory services and radiology imaging procedures. We encourage our partners and individuals whose wants or needs are in health and care at a lower market price and even if your insurance has you covered with your expenses, you can still avail a discounted amount from your co-pay. 
-                        span We make sure you get more by paying less. 
-                        | Great value for you and for the hard earned money that you and your family deserve. 
-
-            .container-separator
-                .section-separator
-
-            //section#at2
-                aside#bu1
-                    #ucare-icon.icon-hero
-                    p.title "Ucare" Organization
-                    p.intro 
-                        span Ucare 
-                        | is your causes and initiatives program!
-
-                aside#bu2
-                    p.para Our Ucare program supports community disaster efforts and shares information on events or efforts for the community to get involved in. 
-                aside.empty
-                aside#bu3
-                    #test.gallery-grid(href="javascript:;")
-
-
-
-        // Why HLO
-        article#y-sec
-            .main-title-box
-                p.main-title-text Why HLO?
-            section#y-icons-container
-                aside#first
-                    #y-icon-one
-                    p Save money by cutting health costs today and in the future!
-                aside#second
-                    #y-icon-two
-                    p Live longer by allowing us to manage your health with regular checkups and more!
-                aside#third
-                    #y-icon-three
-                    p Stay stress free for your future with 'uHeath'!
-                   
-
-
-
-        article#team
-            .main-title-box 
-                .main-title-text 
-                    | The Team
-
-
-            #team-container
-                .ind-container
-
-                    // About founder
-                    .modal-container
-                        input.modal-toggle#modal-toggle-one(type="checkbox")
-                        label.modal-btn(for="modal-toggle-one")
-                            | About me
-                        label.modal-backdrop(for="modal-toggle-one")
-                        .modal-content
-                            label.modal-close(for="modal-toggle-one")
-                                i.fa.fa-times(aria-hidden="true")
-                            .selfie-thumb#founder-thumb                           
-                            h2 My story
-                            p Working as medical laboratory profesional as a career had engaged me an advantage. Early years in my career as licensed professional in my hometown I right on dedicated mysef for community causes and initiatives particularly drawn to be a service volunteer in some areas of my country, Philippines. Having been exposed to very poor communities, it oepned the eyes of my heart to mind that as much as I have been given with what I have, I will give back. lateryears as a laboratory professional, I have worked as a chapter service representative ina non profit organization and a volunteer to other service departments. As a medical technologist, the knowledge and capacity to give back in ways I can was possible by being a volunteer myself for others - from my hometow, national region, Asia country and more.
-                            i "Only a lived call is a fulfilled life"  
-                            i ~ Rabboni Calunsag
-                            div
-                                a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn") 
-                                    i.fa.fa-linkedin(aria-hidden="true")
-
-                    #emp-one.mug
-                    .emp-info
-                        p Rabboni 
-                            span Calunsag
-
-                        p Founder
-                    .social-container
-                        a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn")
-                            i.fa.fa-linkedin(aria-hidden="true")
-                
-                .ind-container
-
-                    // About tech lead
-                    .modal-container
-                        input.modal-toggle#modal-toggle-two(type="checkbox")
-                        label.modal-btn(for="modal-toggle-two")
-                            | About me
-                        label.modal-backdrop(for="modal-toggle-two")
-                        .modal-content
-                            label.modal-close(for="modal-toggle-two")
-                                i.fa.fa-times(aria-hidden="true")
-                            .selfie-thumb#tech-thumb                           
-                            h2 My story
-                            p  Forage bitters selfies polaroid disrupt, mumblecore meditation. Keytar PBR&B 90's dreamcatcher tumeric. You probably haven't heard of them organic pok pok 90's ramps man braid pitchfork tote bag. Godard edison bulb master cleanse twee lo-fi la croix, jean shorts kickstarter mlkshk salvia. Letterpress vinyl street art unicorn tacos ugh twee pork belly migas pok pok shabby chic fixie. Kitsch butcher glossier bushwick williamsburg semiotics kombucha vegan fanny pack +1 affogato leggings viral prism. Mustache cray vinyl, cliche activated charcoal lumbersexual bespoke bushwick craft beer swag +1. Mlkshk direct trade tumeric fingerstache hexagon kitsch +1 viral bicycle rights venmo. Sriracha gentrify small batch shoreditch activated charcoal bespoke man braid. Man bun helvetica kombucha bitters, craft beer readymade locavore shoreditch vaporware viral ugh taxidermy lumbersexual biodiesel semiotics.
-
-                            div
-                                a.github(href="https://github.com/diepenbrock", rel="Github") 
-                                    i.fa.fa-github(aria-hidden="true")
-
-
-                    #emp-two.mug
-                    .emp-info
-                        p Ted  
-                            span Diepenbrock
-
-                        p Tech Lead
-                    .social-container
-                        a.twitter(href="https://mobile.twitter.com/ted_diepenbrock", rel="Twitter")
-                            i.fa.fa-twitter(aria-hidden="true")
-                        a.github(href="https://github.com/diepenbrock", rel="Github")
-                            i.fa.fa-github(aria-hidden="true")
-
-
-
-
-        //article#partners
-        //    .main-title-box 
-        //        .main-title-text 
-        //            | Partners
-
-
-
-
-
-
-        //article#faqs
-        //    .main-title-box 
-        //        .main-title-text 
-        //            | FAQs
-
-
-
-
-        article#conclusion
-            section
-                div
-                    p Join our conversation on 
-                        span Slack 
-                        | to learn about our 
-                        span.bold progress
-                        | , 
-                        span.bold future plans 
-                        | or to 
-                        span.bold contribute 
-                        | to HLO development.
-
-                .slack-container
-                    .slack-button
-                        p
-                            a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+            // wraps slideout menu
+            .wrapper
+                input#navigation(type='checkbox')
+                label(for='navigation')
+                    | &#9776;
+                nav
+                    ul
+                        li
+                            a(href='#programs-sec') HLO
+                        li
+                            a(href="#team") Team
+                        li
+                            a(href="https://healthcarelibraryorg.wordpress.com") 
+                                i.fa.fa-wordpress(aria-hidden="true")
+                                | Blog
+                        li
+                            a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack") 
                                 i.fa.fa-slack(aria-hidden="true")
                                 | Join Slack
 
+                        li
+                            a(href="https://github.com/HLOhealthcare/projectHLO") 
+                                i.fa.fa-github(aria-hidden="true")
+                                | Git Repository
+
+                        li
+                            a(href="mailto:hello@healthcarelib.org", rel="Paper plane")
+                                i.fa.fa-paper-plane(aria-hidden="true")
+                                | Contact Us
 
 
 
+            // contains header, main, and footer
+            #main-container
 
+                header#header
 
-        footer
-            section
-                div
-                    p HLO Foundation
-                div#footer-extras
-                    aside
+                    //.canvas
+                    //.searchlight
+                    
+                    nav.navbar
+                        div
+                            a(href="#")
+                        div
+
+                        div 
+                            //empty space
+                        div 
+                            a(href="#")
+                        div 
+                            a(href="#") Blog
+                        div 
+                            a(href="#team") Team
+                        div 
+                            a(href="#", rel="Slack")
+                                i.fa.fa-slack(aria-hidden="true")
+                                | Slack
+                        div
+                            
+
+                    #title-box
                         p 
-                            a(href="https://healthcarelibraryorg.wordpress.com",rel="Blog") Blog
-                        p 
-                            a(href="#faqs",rel="FAQs") Team
-                        p 
-                            a(href="https://github.com/HLOhealthcare/projectHLO",rel="Git Repo") Git Repository
-                    aside
-                        p Get in touch: 
-                        a(href="mailto:hello@healthcarelib.org",rel="email us") hello@healthcarelib.org
+                            | A health and care foundation where 
+                            span your health 
+                            | is 
+                            span our value.
 
-                div#social-footer-main-container
-                    .social-footer-sub-container
-
-                        // slack
-                        a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
-                            i.fa.fa-slack(aria-hidden="true")
-
-                        // github
-                        a(href="https://github.com/HLOhealthcare/projectHLO", rel="Github")
-                            i.fa.fa-github(aria-hidden="true")
-
-                        // wordpress
-                        a(href="https://healthcarelibraryorg.wordpress.com", rel="Wordpress")
-                            i.fa.fa-wordpress(aria-hidden="true")                           
-                        // email
-                        a(href="mailto:hello@healthcarelib.org", rel="Paper plane")
-                            i.fa.fa-paper-plane(aria-hidden="true")
-                                                // facebook
-                        a(href="https://healthcarelibraryorg.wordpress.com", rel="Facebook")
-                            i.fa.fa-facebook(aria-hidden="true")
-
-                div
-                    p Copyright &copy; 2017 HLO. All rights reserved
+                        p Welcome to HLO. Our aim to be a socially responsible organization and act from every well thought and valued approach with you as our principle. Come support HLO by becoming a member or partner. Enjoy our "uHealth" service offers and have the change to give back to the world through our "uCare" program.
+                        
+                // END HEADER 
 
 
+                // START MAIN 
+                main.main-container
+                    // Programs
+                    article#programs-sec
+                        .main-title-box
+                            p.main-title-text Uhealth Program
+                        section#at1
+                            aside#au1
+                                #uhealth-icon.icon-hero
+                                //p.title "Uhealth"
+                                p.intro Your 
+                                    span healthcare 
+                                    | wants and needs program.
+                                p.para Our services program offers a subsidized healthcare cost for general full laboratory services and radiology imaging procedures. We encourage our partners and individuals whose wants or needs are in health and care to avail from us lower market price service. Even if your insurance has you covered with your expenses, discounts are still rewarded. Great 
+                                    span VALUE  
+                                    | for you and your family.
+
+                        .container-separator
+                            .section-separator
+
+
+                    // Why HLO
+                    article#y-sec
+                        .main-title-box
+                            p.main-title-text Why uHealth?
+                        section#y-icons-container
+                            aside#first
+                                #y-icon-one
+                                p Save money by cutting unnecessary health bills today and tomorrow.
+                            aside#second
+                                #y-icon-two
+                                p Live longer by allowing our genuine specialists manage your regular health checkups.
+                            aside#third
+                                #y-icon-three
+                                p Stay stress-free and maintain wellbeing with our honest 'uHealth' program.
+                               
+
+
+
+                    article#team
+                        .main-title-box 
+                            .main-title-text 
+                                | The Team
+
+
+                        #team-container
+
+                            // About founder
+                            .ind-container
+                                .modal-container
+                                    input.modal-toggle#modal-toggle-one(type="checkbox")
+                                    label.modal-btn(for="modal-toggle-one")
+                                        | About me
+                                    label.modal-backdrop(for="modal-toggle-one")
+                                    .modal-content
+                                        label.modal-close(for="modal-toggle-one")
+                                            i.fa.fa-times(aria-hidden="true")
+                                        .selfie-thumb#founder-thumb                           
+                                        h2 My story
+                                        p Rabboni begain her journey when she became a medical laboratory professional. Due to the expereince and insight she received from her career, she was drawn to community causes and initiatives. Her vision is to give affordable opportunities to those who need it most, by creating a foundation that truly cares about their customers...
+
+                                        i "Only a lived call is a fulfilled life"  
+                                        i ~ Rabboni Calunsag
+                                        div
+                                            a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn") 
+                                                i.fa.fa-linkedin(aria-hidden="true")
+
+                                #emp-one.mug
+                                .emp-info
+                                    p Rabboni 
+                                        span Calunsag
+                                    p Founder
+                                .social-container
+                                    a.linkedin(href="https://www.linkedin.com/in/rabboni-calunsag-0315b9111/", rel="LinkedIn")
+                                        i.fa.fa-linkedin(aria-hidden="true")
+                                    //a.twitter(href="https://twitter.com", rel="Twitter")
+                                        i.fa.fa-twitter(aria-hidden="true")
+
+
+                            // About tech lead
+                            .ind-container
+                                .modal-container
+                                    input.modal-toggle#modal-toggle-two(type="checkbox")
+                                    label.modal-btn(for="modal-toggle-two")
+                                        | About me
+                                    label.modal-backdrop(for="modal-toggle-two")
+                                    .modal-content
+                                        label.modal-close(for="modal-toggle-two")
+                                            i.fa.fa-times(aria-hidden="true")
+                                        .selfie-thumb#tech-thumb                           
+                                        h2 My story
+                                        p Ted has experience in web development, business as well as marketing. He has operated a startup and lead web and application developments. He attended college for business and computer science but obtained most of his knowledge from google and various online courses.  Ted enjoys sharing his growing data of facts under the sun (and beyond it as well). He would tell you not to take his advice without first researching, but his personality has a way of ensuring trust.
+                                        i "For what of a nail..."
+                                        i ~ Unknown
+
+
+                                        div
+                                            a.github(href="https://github.com/diepenbrock", rel="Github") 
+                                                i.fa.fa-github(aria-hidden="true")
+
+
+                                #emp-two.mug
+                                .emp-info
+                                    p Ted  
+                                        span Diepenbrock
+
+                                    p Tech Lead
+                                .social-container
+                                    a.twitter(href="https://mobile.twitter.com/ted_diepenbrock", rel="Twitter")
+                                        i.fa.fa-twitter(aria-hidden="true")
+                                    a.github(href="https://github.com/diepenbrock", rel="Github")
+                                        i.fa.fa-github(aria-hidden="true")
+
+
+
+
+                    //article#partners
+                    //    .main-title-box 
+                    //        .main-title-text 
+                    //            | Partners
 
 
 
 
 
-    script(src="./js/hlo.js")
+
+                    //article#faqs
+                    //    .main-title-box 
+                    //        .main-title-text 
+                    //            | FAQs
+
+
+
+
+                    article#conclusion
+                        section
+                            div
+                                p Join our conversation on 
+                                    span Slack 
+                                    | to learn about our 
+                                    span.bold progress
+                                    | , 
+                                    span.bold future plans 
+                                    | or to 
+                                    span.bold contribute 
+                                    | to HLO development.
+
+                            .slack-container
+                                .slack-button
+                                    p
+                                        a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+                                            i.fa.fa-slack(aria-hidden="true")
+                                            | Join Slack
+
+
+
+
+
+
+                    footer
+                        section
+                            div
+                                p HLO Foundation
+                            div#footer-extras
+                                aside
+                                    p 
+                                        a(href="https://healthcarelibraryorg.wordpress.com",rel="Blog") Blog
+                                    p 
+                                        a(href="#team",rel="Team") Team
+                                    p 
+                                        a(href="https://github.com/HLOhealthcare/projectHLO",rel="Git Repo") Git Repository
+                                aside
+                                    p Get in touch: 
+                                    a(href="mailto:hello@healthcarelib.org",rel="email us") hello@healthcarelib.org
+
+                            div#social-footer-main-container
+                                .social-footer-sub-container
+
+                                    // slack
+                                    a(href="https://join.slack.com/t/hlo-chat/shared_invite/enQtMjg5MTIyMjEwOTEzLWMzNWIxNDNjMmU1OGExYWVjZTBhOGMyZGM4MzMwNDI5Y2ZkZDQxYTU2ZjdlZDQ0ZmUyNDEyOWRlZTY1ZmRjOGE", rel="Slack")
+                                        i.fa.fa-slack(aria-hidden="true")
+
+                                    // github
+                                    a(href="https://github.com/HLOhealthcare/projectHLO", rel="Github")
+                                        i.fa.fa-github(aria-hidden="true")
+                                    // email
+                                    a(href="mailto:hello@healthcarelib.org", rel="Paper plane")
+                                        i.fa.fa-paper-plane(aria-hidden="true")
+                                    // wordpress
+                                    a(href="https://healthcarelibraryorg.wordpress.com", rel="Wordpress")
+                                        i.fa.fa-wordpress(aria-hidden="true")                           
+
+                                                            // facebook
+                                    a(href="https://www.facebook.com/pg/healthcarelib.org/about/", rel="Facebook")
+                                        i.fa.fa-facebook(aria-hidden="true")
+
+                            div
+                                p Copyright &copy; 2017 HLO. All rights reserved
+
+
+
+
+
+
+
+        script(src="./js/hlo.js")
