@@ -3,7 +3,7 @@
 
 
 // ANIMATE.CSS (bounce in logo)
-$('#bounceInLogo').addClass('animated bounceInLeft');
+//$('#bounceInLogo').addClass('animated bounceInLeft');
 
 
 
@@ -52,10 +52,12 @@ $('a[href*="#"]')
 //
 //// hide menu on scroll
 //$(function() {
-//    $(window).scroll(function() {
-//        $('#menu').fadeOut();
+//    $(window).onscroll(function() {
+//        $('#navigation').attr('disabled',true);
 //    });
 //});
+
+
 
 
 

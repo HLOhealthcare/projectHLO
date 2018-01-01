@@ -4,6 +4,91 @@
   margin: 0;
   border: 0; }
 
+.wrapper {
+  overflow: hidden; }
+  @media only screen and (max-width: 55em) {
+    .wrapper {
+      display: block; } }
+  .wrapper label {
+    display: block;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 700;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+    background: #38C098;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.2em;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    z-index: 500; }
+  .wrapper input[type="checkbox"] {
+    display: none; }
+  .wrapper input[type="checkbox"]:checked ~ nav {
+    margin: 0; }
+  .wrapper input[type="checkbox"]:checked ~ label {
+    right: 260px; }
+  .wrapper h1, .wrapper p, .wrapper li {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    color: #222;
+    margin: 0 0 1em; }
+  .wrapper section li {
+    margin: 0 0 10px; }
+  .wrapper h1 {
+    font-size: 2.5em;
+    font-weight: 300; }
+  .wrapper p {
+    font-size: 1em;
+    line-height: 1.5em; }
+  .wrapper .wrapper {
+    overflow: hidden; }
+  .wrapper section {
+    padding: 30px 80px 30px 30px; }
+  .wrapper nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    -moz-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; }
+    .wrapper nav a {
+      color: #fff;
+      font-size: 1em;
+      font-family: 'helvetica neue', helvetica, arial, sans-serif;
+      text-decoration: none;
+      display: block;
+      padding: 12px 15px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #333; }
+      .wrapper nav a:hover {
+        background: #111; }
+    .wrapper nav ul {
+      width: 250px;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      background: #222;
+      overflow: hidden; }
+      .wrapper nav ul li {
+        margin: 0; }
+        .wrapper nav ul li:nth-child(3) {
+          height: 40px; }
+        .wrapper nav ul li a i {
+          padding-right: 10px; }
+
 header {
   background: linear-gradient(#38c098, rgba(56, 192, 152, 0.5)), url("../images/seasia.png");
   background-repeat: repeat;
@@ -38,24 +123,18 @@ header {
         width: 90px; }
       header nav.navbar > div:nth-child(3) {
         flex-grow: 1; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 55em) {
         header nav.navbar > div:nth-child(4) {
           display: none; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 55em) {
         header nav.navbar > div:nth-child(5) {
           display: none; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 55em) {
         header nav.navbar > div:nth-child(6) {
           display: none; } }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 55em) {
         header nav.navbar > div:nth-child(7) {
           display: none; } }
-      header nav.navbar > div:nth-child(8) {
-        display: none; }
-        @media only screen and (max-width: 50em) {
-          header nav.navbar > div:nth-child(8) {
-            display: block;
-            font-size: 1.8em; } }
       header nav.navbar > div > a {
         padding: 0 25px;
         color: #FFF;
@@ -107,10 +186,11 @@ main.main-container {
       margin: 0 auto;
       padding: 30px 0;
       text-align: center;
+      font-style: cursive;
       color: #333;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 1.8em;
-      font-weight: 400; }
+      font-family: "Dancing Script", cursive;
+      font-size: 2em;
+      font-weight: 600; }
     main.main-container #programs-sec .container-separator {
       width: 100%;
       text-align: center;
@@ -119,6 +199,7 @@ main.main-container {
       position: relative;
       height: 60px;
       width: 60px;
+      z-index: -1;
       background-image: url("../favicon/favicon@144.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -214,9 +295,9 @@ main.main-container {
       padding: 30px 0;
       text-align: center;
       color: #333;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 1.8em;
-      font-weight: 400; }
+      font-family: "Dancing Script", cursive;
+      font-size: 2em;
+      font-weight: 600; }
     main.main-container #y-sec #y-icons-container {
       display: -webkit-flex;
       display: -moz-flex;
@@ -248,8 +329,6 @@ main.main-container {
         align-items: center;
         border-radius: 5px;
         box-shadow: 3px 3px 5px #d4d7dd; }
-        main.main-container #y-sec #y-icons-container aside:hover {
-          box-shadow: 6px 6px 5px #d4d7dd; }
         @media only screen and (max-width: 48em) {
           main.main-container #y-sec #y-icons-container aside {
             width: 100%;
@@ -294,16 +373,9 @@ main.main-container {
       padding: 30px 0;
       text-align: center;
       color: #333;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 1.8em;
-      font-weight: 400; }
-    main.main-container article#team .slidedown {
-      position: fixed;
-      top: -100%;
-      margin: 0 auto;
-      background: #333;
-      height: 300px;
-      width: 300px; }
+      font-family: "Dancing Script", cursive;
+      font-size: 2em;
+      font-weight: 600; }
     main.main-container article#team #team-container {
       width: 100%;
       margin: 0 auto;
@@ -455,7 +527,7 @@ main.main-container {
               position: fixed;
               left: 0;
               top: 0;
-              z-index: 9;
+              z-index: 999;
               visibility: visible;
               opacity: 1;
               transition: opacity 0.2s ease-in; }
@@ -558,7 +630,8 @@ main.main-container {
       font-weight: 400; }
   main.main-container article#conclusion {
     height: auto;
-    border: 1px dotted #333; }
+    border: 1px dotted #333;
+    z-index: -100; }
     main.main-container article#conclusion section {
       width: 100%;
       padding: 75px 0; }
@@ -590,11 +663,7 @@ main.main-container {
           height: 70px;
           width: 260px;
           background-color: #38C098;
-          opacity: 0.8;
-          border-radius: 40px;
-          transition: opacity 0.3s ease-in; }
-          main.main-container article#conclusion section .slack-container .slack-button:hover {
-            opacity: 1; }
+          border-radius: 40px; }
           main.main-container article#conclusion section .slack-container .slack-button p {
             color: #FFF;
             font-family: "Source Sans Pro", sans-serif;
