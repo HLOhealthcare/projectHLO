@@ -96,6 +96,7 @@ $linkedin-color: #0077B5;
 
 .wrapper {
     overflow: hidden;
+    display: none;
 
     @include media(55em) {
         display: block;
@@ -215,53 +216,6 @@ header {
         height: auto;
         //animation: animatedBackground 60s linear infinite;
     }
-
-    //animation: animatedBackground 30s linear infinite;
-    //@keyframes animatedBackground {
-    //    0%, 100% {
-    //        background-position: 0 0;
-    //    }
-    //    50% {
-    //        background-position: 100% 100%;
-    //    }
-    //} //END keyframes
-
-
-    // START spotlight
-
-    //.searchlight {
-    //    position: absolute;
-    //    z-index: 100;
-    //    height: 300px;
-    //    width: 300px;
-    //    border-width: 100vh 100vw;
-    //    border-style: solid;
-    //    border-color: #000;
-    //    top: -100vh;
-    //    left: -100vw;
-    //    cursor: none;
-    //    background: #000;
-    //    -moz-box-sizing: content-box;
-    //    -webkit-box-sizing: content-box;
-    //    -ms-box-sizing: content-box;
-    //    box-sizing: content-box;
-    //    opacity: 0.3;
-    //    @include media(55em) {
-    //        display: none;
-    //    }
-    //}
-    //.searchlight.on {
-    //    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-    //    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-    //    background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Opera 12+ */
-    //    background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* IE10+ */
-    //    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* W3C */
-
-    //    @include media(55em) {
-    //        display: none;
-    //    }
-    //}
-
 
 
 
@@ -443,114 +397,9 @@ main.main-container {
             }//END #au1
         }//END #at1
 
-        //#at2 {
-        //    padding-bottom: 50px;
-        //    display: -webkit-flex;
-        //    display: -ms-flex;
-        //    display: flex;
-        //    flex-direction: row;
-        //    flex-wrap: wrap;
-        //    align-items: center;
-        //    justify-content: center;
-        //    @include media(48em) {
-        //        flex-direction: column;
-        //        flex-wrap: no-wrap;
-        //    }
-        //    #bu1 {
-        //        width: 100%;
-        //        #ucare-icon {
-        //            position: relative;
-        //            height: 60px;
-        //            width: 60px;
-        //            @include image('../images/hlo-icons/services-2.png',contain);
-        //            &::before {
-        //                content: '';
-        //                position: absolute;
-        //                top: 30px;
-        //                left: 70px;
-        //                display: inline-block;
-        //                height: 2px;
-        //                width: 300px;
-        //                margin: 0 auto;
-        //                background-color: #777;
-        //                @include media(48em) {
-        //                    width: 230px;
-        //                }
-        //                @include media(40em) {
-        //                    width: 200px;
-        //                }
-        //                @include media(35em) {
-        //                    width: 130px;
-        //                }
-        //            }
-        //            &::after {
-        //                content: '';
-        //                position: absolute;
-        //                top: 30px;
-        //                right: 70px;
-        //                display: inline-block;
-        //                height: 2px;
-        //                width: 300px;
-        //                margin: 0 auto;
-        //                background-color: #777;
-        //                @include media(48em) {
-        //                    width: 230px;
-        //                }
-        //                @include media(40em) {
-        //                    width: 200px;
-        //                }
-        //                @include media(35em) {
-        //                    width: 130px;
-        //                }
-        //            }
-        //        }
-        //    }
 
-        //    #bu2 {
-        //        width: 48%;
-        //        padding-top: 50px;
-        //        p.para {
-        //            width: 80%;
-        //            margin: 0 auto;
-        //        }
-        //        @include media(55em) {
-        //        
-        //        }
-        //        @include media(48em) {
-        //            width: 100%;
-        //        }
-        //    }
-        //    .empty {
-        //        flex-grow: 1;
-        //        @include media(60em) {
-        //            display: none;
-        //        }
-        //    }
-        //    #bu3 {
-        //        width: 48%;
-        //        padding-top: 50px;
-
-        //        @include media(50em) {
-        //            width: 100%;
-        //        }
-        //        .gallery-grid {
-        //            height: 300px;
-        //            width: 90%;
-        //            @include image('../images/gallery-grid.png',contain);
-        //            @include media(55em) {
-        //                height: 250px;
-        //                width: 380px;
-        //            }
-        //            @include media(50em) {
-        //                width: 80%;
-        //                margin: 0 auto;
-        //            }
-        //        }               
-        //    }
-        //}//END at2
 
         // default elements
-
         section {
             text-align: center;
             justify-content: space-between;
@@ -729,10 +578,8 @@ main.main-container {
                     width: 100%;
 
                     .modal-btn {
-                        position: absolute;
-                        bottom: -117px;
                         display: block;
-                        margin: 0 auto;      
+                        margin: 180px auto 0 auto;      
                         color: #fff;  
                         width: 100%;
                         height: 50px;    
@@ -751,7 +598,7 @@ main.main-container {
                             background: #365690; 
                         }
                         @include media(55em) {
-                            bottom: -110px;
+                            margin: 150px auto 0 auto;
                         }
                     }
 
@@ -927,6 +774,8 @@ main.main-container {
 
                 .social-container {
                     a {
+                        z-index: 100;
+                        position: relative;
                         @include href(#535353);
                         i {
                             padding: 7px 5px 0 5px;
