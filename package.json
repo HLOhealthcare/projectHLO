@@ -6,7 +6,7 @@
   "description": "Bower packages for the hlo website",
   "main": "development",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "http://healthcareli.org",
   "private": true,
   "ignore": [
     "**/.*",
