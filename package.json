@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/HLOhealthcare/projectHLO/issues"
   },
-  "homepage": "https://github.com/HLOhealthcare/projectHLO#readme"
+  "homepage": "https://github.com/HLOhealthcare/projectHLO#readme",
+  "dependencies": {}
 }
